@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.titleDescription {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+p {
+  color: rgb(172, 172, 172);
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+span {
+  color: rgb(102, 255, 0);
+  padding: 0;
+  margin: 0;
+}
+
+.particles {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  border: 3px solid rgb(102, 255, 0);
+  background-color: rgba(0, 255, 255, 0);
+  padding: 20px 20px;
+  color: rgb(102, 255, 0);
+  border-radius: 5px;
+  width: 230px;
+  font-size: 1.2;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 20px;
+  transition-duration: 0.7s;
+}
+
+.btn:hover .arrow {
+  transform: rotate(90deg);
+}

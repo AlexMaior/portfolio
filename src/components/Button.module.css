@@ -1,0 +1,8 @@
+.btn {
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+}

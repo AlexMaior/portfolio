@@ -1,12 +1,25 @@
 import React from "react";
-import "./App.css";
 import Particles from "react-particles-js";
+import { ImArrowRight } from "react-icons/im";
+import classes from "./App.module.css";
+import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Alex Maior</h1>
+    <div className={classes.App}>
+      <div className={classes.titleDescription}>
+        <p>Hello, I'm </p>
+        <span>Alex Maior</span>
+        <br />
+        <p>a full-stack web developer</p>
+        <br />
+        <Button className={classes.btn}>
+          VIEW MY WORK <ImArrowRight className={classes.arrow} />
+        </Button>
+      </div>
+
       <Particles
+        className={classes.particles}
         params={{
           particles: {
             number: {
@@ -97,7 +110,7 @@ function App() {
                 },
               },
               bubble: {
-                distance: 400,
+                distance: 200,
                 size: 1,
                 duration: 0.3,
                 opacity: 1,
