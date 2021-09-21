@@ -35,8 +35,6 @@ span {
   width: 230px;
   font-size: 1.2;
   display: flex;
-  left: 0;
-  right: 0;
   margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
@@ -55,6 +53,29 @@ span {
 }
 
 .btn:hover .arrow {
+  transform: rotate(90deg);
+  color: brown;
+}
+
+.btnTheme {
+  position: fixed;
+  background-color: rgba(165, 42, 42, 0);
+  border: none;
+  right: 0;
+  top: 0;
+  padding: 20px 20px;
+  outline: none;
+}
+.btnThemeIcon {
+  transition-duration: 0.7s;
+}
+
+.btnTheme .btnThemeIcon {
+  color: rgb(102, 255, 0);
+  font-size: 50px;
+}
+
+.btnTheme:hover .btnThemeIcon {
   transform: rotate(90deg);
   color: brown;
 }

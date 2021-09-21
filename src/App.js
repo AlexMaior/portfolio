@@ -23,8 +23,8 @@ function App() {
       <div className={classes.App}>
         <GlobalStyles />
         <div className={classes.titleDescription}>
-          <Button onClick={toggleTheme} className={classes.btn}>
-            <IoSunnyOutline />
+          <Button onClick={toggleTheme} className={classes.btnTheme}>
+            <IoSunnyOutline className={classes.btnThemeIcon} />
           </Button>
           <p>Hello, I'm </p>
           <span>Alex Maior</span>
@@ -36,6 +36,24 @@ function App() {
           </Button>
         </div>
         <ParticlesComponent />
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
       </div>
     </ThemeProvider>
   );
