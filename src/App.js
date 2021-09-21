@@ -1,7 +1,8 @@
 import React from "react";
-import { ImArrowRight } from "react-icons/im";
 import classes from "./App.module.css";
 import Button from "./components/Button";
+import { ImArrowRight } from "react-icons/im";
+import { IoSunnyOutline } from "react-icons/io5";
 import { ParticlesComponent } from "./components/ParticlesComponent";
 
 function App() {

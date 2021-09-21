@@ -42,6 +42,7 @@ span {
   margin-right: auto;
   justify-content: space-around;
   align-items: center;
+  transition-duration: 0.7s;
 }
 
 .arrow {
@@ -49,6 +50,11 @@ span {
   transition-duration: 0.7s;
 }
 
+.btn:hover {
+  border: 3px solid brown;
+}
+
 .btn:hover .arrow {
   transform: rotate(90deg);
+  color: brown;
 }
