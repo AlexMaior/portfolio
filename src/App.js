@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import classes from "./App.module.css";
 import Button from "./components/Button";
 import { ImArrowRight } from "react-icons/im";

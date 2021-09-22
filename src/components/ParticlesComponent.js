@@ -1,4 +1,5 @@
 import Particles from "react-particles-js";
+import { getRangeMin } from "tsparticles";
 import classes from "./ParticlesComponent.module.css";
 export const ParticlesComponent = () => {
   return (
@@ -95,10 +96,11 @@ export const ParticlesComponent = () => {
             },
             bubble: {
               distance: 200,
-              size: 1,
+              size: 2,
               duration: 0.3,
               opacity: 1,
               speed: 3,
+              color: "#66ff00",
             },
             repulse: {
               distance: 200,

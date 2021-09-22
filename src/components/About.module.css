@@ -1,6 +1,12 @@
+.aboutSectionContainer {
+  background-color: rgb(214, 214, 214);
+}
+
 .aboutTitle {
   font-size: 50px;
   margin-bottom: 75px;
+  margin-top: 0;
+  padding-top: 50px;
 }
 
 .aboutSection {
@@ -9,7 +15,6 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
 }
 
 .aboutSection article {
