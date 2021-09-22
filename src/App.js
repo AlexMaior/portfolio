@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import classes from "./App.module.css";
 import Button from "./components/Button";
 import { ImArrowRight } from "react-icons/im";
 import { IoSunnyOutline } from "react-icons/io5";
+import { GiSpeedometer, GiAerodynamicHarpoon } from "react-icons/gi";
+import { BiDevices } from "react-icons/bi";
+import { HiOutlineLightBulb } from "react-icons/hi";
 import { ParticlesComponent } from "./components/ParticlesComponent";
 
 import { ThemeProvider } from "styled-components";
@@ -18,6 +21,12 @@ function App() {
       setTheme("light");
     }
   };
+
+  const myRef = useRef(null);
+  const executeScroll = () => {
+    myRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <div className={classes.App}>
@@ -31,11 +40,70 @@ function App() {
           <br />
           <p>a full-stack web developer</p>
           <br />
-          <Button className={classes.btn}>
+          <Button className={classes.btn} onClick={executeScroll}>
             VIEW MY WORK <ImArrowRight className={classes.arrow} />
           </Button>
         </div>
         <ParticlesComponent />
+        <div ref={myRef}>
+          <h2>About</h2>
+          <section>
+            <GiSpeedometer />
+            <BiDevices />
+            <GiAerodynamicHarpoon />
+            <HiOutlineLightBulb />
+          </section>
+        </div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
         <div>aaaaa</div>
         <div>aaaaa</div>
         <div>aaaaa</div>
