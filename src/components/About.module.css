@@ -1,0 +1,28 @@
+.aboutTitle {
+  font-size: 50px;
+  margin-bottom: 75px;
+}
+
+.aboutSection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+
+.aboutSection article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.aboutSection article p {
+  color: black;
+}
+
+.size {
+  font-size: 100px;
+}
