@@ -1,0 +1,35 @@
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: #242426;
+  color: #b9ab9d;
+  box-sizing: border-box;
+}
+
+.navContent {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navContent article {
+  display: flex;
+}
+
+.article2 {
+  flex-grow: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.active {
+  color: red;
+}

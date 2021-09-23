@@ -1,5 +1,4 @@
 import Particles from "react-particles-js";
-import { getRangeMin } from "tsparticles";
 import classes from "./ParticlesComponent.module.css";
 export const ParticlesComponent = () => {
   return (

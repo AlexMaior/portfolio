@@ -4,16 +4,16 @@ import Button from "./components/Button";
 import { FaArrowRight } from "react-icons/fa";
 import { ParticlesComponent } from "./components/ParticlesComponent";
 import About from "./components/About";
+import Navbar from "./components/Navbar";
 
 function App() {
   const myRef = useRef(null);
   const executeScroll = () => {
     myRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
   return (
     <div className={classes.App}>
-      <div className={classes.titleDescription}>
+      <section className={classes.titleDescription} id="home">
         <p>
           Hello, I'm
           <span> Alex Maior</span>.
@@ -25,34 +25,81 @@ function App() {
           VIEW MY WORK
           <FaArrowRight className={classes.arrow} />
         </Button>
-      </div>
+      </section>
       <ParticlesComponent />
-      <div ref={myRef}>
-        <About />
+      <div ref={myRef}></div>
+      <Navbar />
+      <section className={classes.contentSection}>
+        <div id="about">
+          <About />
+        </div>
+      </section>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div>aaaaa</div>
+      <div id="projects">
+        Projects
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
       </div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
+
+      <div id="contact">
+        contact
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+      </div>
       <div>aaaaa</div>
       <div>aaaaa</div>
       <div>aaaaa</div>
