@@ -1,5 +1,15 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./Font/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("./Font/Montserrat/Montserrat-SemiBold.ttf");
+}
+
 .App {
   text-align: center;
+  font-family: "Montserrat";
 }
 
 .titleDescription {
@@ -9,73 +19,92 @@
   margin-top: 30vh;
   margin-left: auto;
   margin-right: auto;
-  font-size: 3rem;
   background-color: rgba(0, 255, 255, 0);
 }
 
 p {
-  color: rgb(172, 172, 172);
+  color: #b9ab9d;
   margin: 0;
   padding: 0;
   display: inline;
 }
 
 span {
-  color: rgb(102, 255, 0);
+  color: #aab83e;
   padding: 0;
   margin: 0;
 }
 
 .btn {
-  border: 3px solid rgb(102, 255, 0);
+  border: 2px solid #aab83e;
   background-color: rgba(0, 255, 255, 0);
-  padding: 20px 20px;
-  color: rgb(102, 255, 0);
-  border-radius: 5px;
-  width: 230px;
-  font-size: 1.2;
+  color: #aab83e;
+  border-radius: 9px;
+  height: 80px;
   display: flex;
   margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   transition-duration: 0.7s;
+  font-family: "MontserratSemiBold";
+  font-size: 26px;
 }
 
 .arrow {
-  font-size: 20px;
   transition-duration: 0.7s;
+  color: #aab83e;
 }
 
 .btn:hover {
-  border: 3px solid brown;
+  background-color: #aab83e;
+  color: #34353a;
 }
 
 .btn:hover .arrow {
   transform: rotate(90deg);
-  color: brown;
+  color: #34353a;
 }
 
-.btnTheme {
-  position: fixed;
-  background-color: rgba(165, 42, 42, 0);
-  border: none;
-  right: 0;
-  top: 0;
-  padding: 20px 20px;
-  outline: none;
-}
-.btnThemeIcon {
-  transition-duration: 0.7s;
+@media only screen and (max-width: 400px) {
+  .btn {
+    width: 160px;
+    font-size: 16px;
+  }
+  .arrow {
+    font-size: 16px;
+  }
+
+  .titleDescription {
+    font-size: 30px;
+  }
 }
 
-.btnTheme .btnThemeIcon {
-  color: rgb(102, 255, 0);
-  font-size: 50px;
+@media only screen and (min-width: 401px) {
+  .btn {
+    width: 260px;
+    font-size: 20px;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+
+  .titleDescription {
+    font-size: 40px;
+  }
 }
 
-.btnTheme:hover .btnThemeIcon {
-  transform: rotate(90deg);
-  color: brown;
+@media only screen and (min-width: 800px) {
+  .btn {
+    width: 360px;
+    font-size: 26px;
+  }
+  .arrow {
+    font-size: 30px;
+  }
+
+  .titleDescription {
+    font-size: 60px;
+  }
 }

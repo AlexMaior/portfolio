@@ -61,7 +61,7 @@ export const ParticlesComponent = () => {
           },
           move: {
             enable: true,
-            speed: 0.5,
+            speed: 0.3,
             direction: "top",
             random: false,
             straight: false,
@@ -100,7 +100,7 @@ export const ParticlesComponent = () => {
               duration: 0.3,
               opacity: 1,
               speed: 3,
-              color: "#66ff00",
+              color: "#aab83e",
             },
             repulse: {
               distance: 200,
