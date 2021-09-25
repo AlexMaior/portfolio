@@ -1,17 +1,8 @@
 .aboutSectionContainer {
-  background-color: rgb(214, 214, 214);
-}
-
-.aboutTitle {
-  font-size: 50px;
-  margin-bottom: 75px;
-  margin-top: 0;
-  padding-top: 50px;
+  margin-top: 100px;
 }
 
 .aboutSection {
-  width: 80%;
-  margin: auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -30,4 +21,17 @@
 
 .size {
   font-size: 100px;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.overlap::after {
+  content: "";
+  background-image: url("../Images/Polygon.svg");
+}
+
+.aboutIcons {
+  width: 237px;
 }

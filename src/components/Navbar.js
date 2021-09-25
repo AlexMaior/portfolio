@@ -18,28 +18,28 @@ const Navbar = () => {
   return (
     <nav className={classes.nav}>
       <section className={classes.navContent}>
-        <article className={classes.article2}>
-          <ul className={classes.article2}>
-            <li>
-              <Link
-                activeClass={classes.active}
-                className="about"
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <img src={Logo} alt="Logo" />
-              </Link>
-            </li>
-          </ul>
-        </article>
-        <article className={classes.article2}>
-          <ul className={classes.article2}>
+        <article>
+          <ul>
             <li>
               <Link
                 activeClass={classes.active}
                 className="home"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <img src={Logo} alt="Logo" className={classes.logo} />
+              </Link>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <ul>
+            <li>
+              <Link
+                activeClass={classes.active}
+                className={classes.size}
                 to="home"
                 spy={true}
                 smooth={true}
@@ -51,7 +51,7 @@ const Navbar = () => {
             <li>
               <Link
                 activeClass={classes.active}
-                className="about"
+                className={classes.size}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <Link
                 activeClass={classes.active}
-                className="projects"
+                className={classes.size}
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -75,7 +75,7 @@ const Navbar = () => {
             <li>
               <Link
                 activeClass={classes.active}
-                className="contact"
+                className={classes.size}
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -86,15 +86,19 @@ const Navbar = () => {
             </li>
           </ul>
         </article>
-        <article className={classes.article2}>
-          <ul className={classes.article2}>
+        <article>
+          <ul>
             <li>
               <a
                 href="https://www.linkedin.com/in/alexmaior/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Linkedin} alt="Linkedin" />
+                <img
+                  src={Linkedin}
+                  alt="Linkedin"
+                  className={classes.imgSocial}
+                />
               </a>
             </li>
             <li>
@@ -103,7 +107,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Github} alt="Github" />
+                <img src={Github} alt="Github" className={classes.imgSocial} />
               </a>
             </li>
             <li>
@@ -112,7 +116,11 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Instagram} alt="Instagram" />
+                <img
+                  src={Instagram}
+                  alt="Instagram"
+                  className={classes.imgSocial}
+                />
               </a>
             </li>
           </ul>

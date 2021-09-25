@@ -4,6 +4,7 @@
   background-color: #242426;
   color: #b9ab9d;
   box-sizing: border-box;
+  border-bottom: 2px solid #aab83e;
 }
 
 .navContent {
@@ -11,14 +12,11 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navContent article {
   display: flex;
-}
-
-.article2 {
-  flex-grow: 1;
 }
 
 ul {
@@ -26,10 +24,24 @@ ul {
   padding: 0;
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  border: 1px solid red;
+  justify-content: space-around;
+}
+
+.imgSocial {
+  width: 30px;
+  padding: 15px;
+}
+
+.logo {
+  width: 90px;
+  padding: 15px;
 }
 
 .active {
-  color: red;
+  color: #aab83e;
+}
+
+.size {
+  font-size: 20px;
+  padding: 22px;
 }

@@ -13,7 +13,8 @@ function App() {
   };
   return (
     <div className={classes.App}>
-      <section className={classes.titleDescription} id="home">
+      <div id="home"></div>
+      <section className={classes.titleDescription}>
         <p>
           Hello, I'm
           <span> Alex Maior</span>.
@@ -99,52 +100,52 @@ function App() {
         <div>aaaaa</div>
         <div>aaaaa</div>
         <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
       </div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
     </div>
   );
 }
