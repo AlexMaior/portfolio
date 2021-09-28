@@ -35,30 +35,8 @@ function App() {
           <About />
         </div>
       </section>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div>aaaaa</div>
-      <div id="projects">
-        Projects
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-      </div>
+
+      <div id="projects">Projects</div>
 
       <div id="contact">contact</div>
     </div>
