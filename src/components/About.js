@@ -10,26 +10,33 @@ const About = () => {
     <div className={classes.aboutSectionContainer}>
       <section className={classes.aboutSection}>
         <article>
-          <img src={Fast} className={classes.overlap} />
-          <img src={Polygon} className={classes.aboutIcons} />
-
+          <div className={classes.aboutIcons}>
+            <img src={Polygon} />
+            <img src={Fast} className={classes.overlap} />
+          </div>
           <p>
             Having a fast site is essential for keeping visitors on your page
           </p>
         </article>
         <article>
-          <img src={Responsive} className={classes.overlap} />
-          <img src={Polygon} />
+          <div className={classes.aboutIcons}>
+            <img src={Polygon} />
+            <img src={Responsive} className={classes.overlap} />
+          </div>
           <p>Layouts that look good and work on any device.</p>
         </article>
         <article>
-          <img src={Dynamic} className={classes.overlap} />
-          <img src={Polygon} />
+          <div className={classes.aboutIcons}>
+            <img src={Polygon} />
+            <img src={Dynamic} className={classes.overlap} />
+          </div>
           <p>Great layouts and websites that have great functionality.</p>
         </article>
         <article>
-          <img src={Intuitive} className={classes.overlap} />
-          <img src={Polygon} />
+          <div className={classes.aboutIcons}>
+            <img src={Polygon} />
+            <img src={Intuitive} className={classes.overlap} />
+          </div>
           <p>Professional looking websites, easy to use and intuitive UX/UI.</p>
         </article>
       </section>

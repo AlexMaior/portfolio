@@ -27,11 +27,8 @@
   position: absolute;
 }
 
-.overlap::after {
-  content: "";
-  background-image: url("../Images/Polygon.svg");
-}
-
 .aboutIcons {
-  width: 237px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

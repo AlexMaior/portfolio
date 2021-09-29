@@ -5,6 +5,7 @@
   color: #b9ab9d;
   box-sizing: border-box;
   border-bottom: 2px solid #aab83e;
+  z-index: 2;
 }
 
 .navContent {
