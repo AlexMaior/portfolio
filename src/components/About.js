@@ -14,6 +14,7 @@ const About = () => {
             <img src={Polygon} />
             <img src={Fast} className={classes.overlap} />
           </div>
+          <p className={classes.color}>Fast</p>
           <p>
             Having a fast site is essential for keeping visitors on your page
           </p>
@@ -23,6 +24,7 @@ const About = () => {
             <img src={Polygon} />
             <img src={Responsive} className={classes.overlap} />
           </div>
+          <p className={classes.color}>Responsive</p>
           <p>Layouts that look good and work on any device.</p>
         </article>
         <article>
@@ -30,6 +32,7 @@ const About = () => {
             <img src={Polygon} />
             <img src={Dynamic} className={classes.overlap} />
           </div>
+          <p className={classes.color}>Dynamic</p>
           <p>Great layouts and websites that have great functionality.</p>
         </article>
         <article>
@@ -37,6 +40,7 @@ const About = () => {
             <img src={Polygon} />
             <img src={Intuitive} className={classes.overlap} />
           </div>
+          <p className={classes.color}>Intuitive</p>
           <p>Professional looking websites, easy to use and intuitive UX/UI.</p>
         </article>
       </section>

@@ -1,0 +1,26 @@
+.projectsContainer {
+  padding-top: 70px;
+  background-color: #242426;
+  position: relative;
+  /* transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem); */
+}
+
+.projectsContainer h2 {
+  font-size: 40px;
+  color: #aab83e;
+}
+
+.projectsImagesContainer {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+.projectsImagesContainer div img {
+  width: 300px;
+  padding: 30px;
+  background-color: aqua;
+}

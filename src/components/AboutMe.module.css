@@ -1,0 +1,70 @@
+.aboutMeContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.imageContainer {
+  width: 40%;
+}
+
+.border {
+  margin-top: 28px;
+  height: 436px;
+}
+
+.overlap {
+  position: absolute;
+  margin-left: 35px;
+  height: 436px;
+}
+
+.aboutMeImageContainer {
+  display: flex;
+  height: 436px;
+}
+
+.textContainer {
+  width: 60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textContainer h2 {
+  font-size: 40px;
+  color: #b9ab9d;
+  margin-top: 0;
+}
+
+.underline {
+  color: #b9ab9d;
+  border-bottom: 3px solid #aab83e;
+}
+
+.textContainer p {
+  display: block;
+  font-size: 20px;
+  color: #b9ab9d;
+}
+
+.btn {
+  text-align: center;
+  width: 320px;
+  padding: 20px;
+  border: 2px solid #aab83e;
+  color: #aab83e;
+  border-radius: 9px;
+  background-color: #aab83e00;
+  font-size: 26px;
+  transition-duration: 0.7s;
+  font-family: "MontserratSemiBold";
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #aab83e;
+  color: #34353a;
+}

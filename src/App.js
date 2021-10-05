@@ -5,6 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { ParticlesComponent } from "./components/ParticlesComponent";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 function App() {
   const myRef = useRef(null);
@@ -28,15 +30,18 @@ function App() {
         </Button>
       </section>
       <ParticlesComponent />
-      <div ref={myRef}></div>
+
       <Navbar />
       <section className={classes.contentSection}>
-        <div id="about">
+        <div id="about" ref={myRef}>
           <About />
+          <AboutMe />
         </div>
       </section>
 
-      <div id="projects">Projects</div>
+      <div id="projects">
+        <Projects />
+      </div>
 
       <div id="contact">contact</div>
       <div>a</div>
