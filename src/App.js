@@ -7,6 +7,7 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const myRef = useRef(null);
@@ -43,7 +44,9 @@ function App() {
         <Projects />
       </div>
 
-      <div id="contact">contact</div>
+      <div id="contact">
+        <Contact />
+      </div>
       <div>a</div>
       <div>a</div>
       <div>a</div>
