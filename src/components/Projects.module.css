@@ -1,8 +1,11 @@
 .projectsContainer {
   padding-top: 70px;
-  background-color: #242426;
   position: relative;
+  padding-bottom: 100px;
   /* transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem); */
+  width: 100%;
+  margin: auto;
+  background-color: #242426;
 }
 
 .projectsContainer h2 {
@@ -12,15 +15,14 @@
 
 .projectsImagesContainer {
   display: flex;
-  width: 75%;
   justify-content: space-around;
-  margin: auto;
   margin-top: 70px;
   flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
 }
 
 .projectsImagesContainer div img {
   width: 300px;
   padding: 30px;
-  background-color: aqua;
 }

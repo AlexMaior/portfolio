@@ -28,6 +28,11 @@ ul {
   justify-content: space-around;
 }
 
+ul li:hover {
+  color: #aab83e;
+  cursor: pointer;
+}
+
 .imgSocial {
   width: 30px;
   padding: 15px;

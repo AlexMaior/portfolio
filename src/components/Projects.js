@@ -11,13 +11,13 @@ const Projects = () => {
         <h2>Projects</h2>
         <article className={classes.projectsImagesContainer}>
           <div>
-            <img src={SibiuGuide} />
+            <img src={SibiuGuide} alt="Sibiu City Guide" />
           </div>
           <div>
-            <img src={Sushi} />
+            <img src={Sushi} alt="Sushi Restaurant" />
           </div>
           <div>
-            <img src={Recipe} />
+            <img src={Recipe} alt="Recipe Website" />
           </div>
         </article>
       </section>

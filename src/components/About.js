@@ -11,8 +11,8 @@ const About = () => {
       <section className={classes.aboutSection}>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} />
-            <img src={Fast} className={classes.overlap} />
+            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Fast} alt="Fast" className={classes.overlap} />
           </div>
           <p className={classes.color}>Fast</p>
           <p>
@@ -21,24 +21,28 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} />
-            <img src={Responsive} className={classes.overlap} />
+            <img src={Polygon} alt="Polygon Shape" />
+            <img
+              src={Responsive}
+              alt="Responsive"
+              className={classes.overlap}
+            />
           </div>
           <p className={classes.color}>Responsive</p>
           <p>Layouts that look good and work on any device.</p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} />
-            <img src={Dynamic} className={classes.overlap} />
+            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Dynamic} alt="Dynamic" className={classes.overlap} />
           </div>
           <p className={classes.color}>Dynamic</p>
           <p>Great layouts and websites that have great functionality.</p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} />
-            <img src={Intuitive} className={classes.overlap} />
+            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Intuitive} alt="Intuitive" className={classes.overlap} />
           </div>
           <p className={classes.color}>Intuitive</p>
           <p>Professional looking websites, easy to use and intuitive UX/UI.</p>

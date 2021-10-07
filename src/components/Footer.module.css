@@ -1,0 +1,26 @@
+.footerContainer {
+  background-color: #242426;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrowImg {
+  margin-top: -30px;
+}
+
+.arrowImg:hover {
+  cursor: pointer;
+}
+
+.footerTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.footerText {
+  margin: auto 0;
+  color: #b9ab9d;
+}

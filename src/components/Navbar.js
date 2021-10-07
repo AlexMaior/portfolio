@@ -4,15 +4,7 @@ import Github from "../Images/github.svg";
 import Instagram from "../Images/instagram.svg";
 import Linkedin from "../Images/linkedin.svg";
 import classes from "./Navbar.module.css";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
