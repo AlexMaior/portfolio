@@ -2,14 +2,13 @@ h2 {
   font-size: 40px;
   color: #aab83e;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .contactCTA {
   margin: 0;
   font-size: 23px;
   color: #b9ab9d;
-  font-family: "Montserrat";
 }
 
 .contactContainer {

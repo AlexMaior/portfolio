@@ -1,0 +1,156 @@
+/* @media only screen and (max-width: 800px) { */
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: #242426;
+  color: #b9ab9d;
+  box-sizing: border-box;
+  border-bottom: 2px solid #aab83e;
+  z-index: 2;
+}
+
+.navContent {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navListContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #242426ec;
+  top: 95px;
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 25px 0px;
+}
+
+ul li:hover {
+  color: #aab83e;
+  cursor: pointer;
+}
+
+.imgSocial {
+  width: 35px;
+  padding: 20px;
+}
+
+.logo {
+  width: 90px;
+}
+
+.active {
+  color: #aab83e;
+}
+
+.size {
+  font-size: 20px;
+  padding: 22px;
+}
+
+/* Burger  */
+
+.burger {
+  position: absolute;
+  right: 0;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #aab83e;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.displ {
+  display: none;
+}
+/* } */
+
+@media only screen and (min-width: 801px) {
+  .navContent {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navListContainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: #24242600;
+    top: 0px;
+    width: auto;
+  }
+
+  .navList {
+    flex-direction: row;
+  }
+
+  .navContainers {
+    display: flex;
+  }
+
+  ul li {
+    padding: 0px;
+  }
+
+  .imgSocial {
+    width: 30px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 90px;
+    padding: 15px;
+  }
+
+  .size {
+    font-size: 20px;
+    padding: 22px;
+  }
+
+  .burger {
+    display: none;
+  }
+}

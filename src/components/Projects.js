@@ -6,22 +6,23 @@ import Recipe from "../Images/foodApp.jpg";
 
 const Projects = () => {
   return (
-    <Fragment>
-      <section className={classes.projectsContainer}>
-        <h2>Projects</h2>
-        <article className={classes.projectsImagesContainer}>
-          <div>
-            <img src={SibiuGuide} alt="Sibiu City Guide" />
-          </div>
-          <div>
-            <img src={Sushi} alt="Sushi Restaurant" />
-          </div>
-          <div>
-            <img src={Recipe} alt="Recipe Website" />
-          </div>
-        </article>
-      </section>
-    </Fragment>
+    <section className={classes.projectsContainer}>
+      <h2>Projects</h2>
+      <article className={classes.projectsImagesContainer}>
+        <div>
+          <img src={SibiuGuide} alt="Sibiu City Guide" />
+          <p>Sibiu City Guide</p>
+        </div>
+        <div>
+          <img src={Sushi} alt="Sushi Restaurant" />
+          <p>Sushi Restaurant</p>
+        </div>
+        <div>
+          <img src={Recipe} alt="Recipe Website" />
+          <p>Recipe Website</p>
+        </div>
+      </article>
+    </section>
   );
 };
 

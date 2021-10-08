@@ -16,6 +16,7 @@ export const ParticlesComponent = () => {
           color: {
             value: "#fff",
           },
+
           shape: {
             type: "circle",
             stroke: {
@@ -79,6 +80,12 @@ export const ParticlesComponent = () => {
             onhover: {
               enable: true,
               mode: "bubble",
+              // Aici am adaugat Paralaxul
+              // parallax: {
+              //   enable: true,
+              //   force: 60,
+              //   smooth: 30,
+              // },
             },
             onclick: {
               enable: true,

@@ -3,33 +3,34 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .imageContainer {
-  width: 40%;
+  margin: auto;
 }
 
 .border {
-  margin-top: 28px;
-  height: 436px;
+  display: none;
 }
 
 .overlap {
-  position: absolute;
-  margin-left: 35px;
-  height: 436px;
+  width: 200px;
 }
 
 .aboutMeImageContainer {
   display: flex;
-  height: 436px;
+  justify-content: center;
 }
 
 .textContainer {
-  width: 60%;
-  text-align: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -52,7 +53,7 @@
 
 .btn {
   text-align: center;
-  width: 320px;
+  width: 220px;
   padding: 20px;
   border: 2px solid #aab83e;
   color: #aab83e;
@@ -67,4 +68,57 @@
 .btn:hover {
   background-color: #aab83e;
   color: #34353a;
+}
+
+@media only screen and (min-width: 700px) {
+  .overlap {
+    width: 250px;
+  }
+
+  .textContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .aboutMeContainer {
+    flex-direction: row;
+  }
+
+  .border {
+    display: flex;
+    margin-top: 28px;
+    height: 436px;
+  }
+
+  .overlap {
+    position: absolute;
+    margin-left: 20px;
+    height: 436px;
+    width: auto;
+  }
+
+  .aboutMeImageContainer {
+    display: flex;
+    height: 436px;
+  }
+
+  .textContainer {
+    text-align: left;
+    width: 60%;
+  }
+
+  .imageContainer {
+    width: 40%;
+  }
+
+  .btn {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .overlap {
+    margin-left: 35px;
+  }
 }
