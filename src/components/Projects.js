@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import classes from "./Projects.module.css";
 import SibiuGuide from "../Images/ssg.jpg";
 import Sushi from "../Images/sushi.jpg";
@@ -10,16 +9,38 @@ const Projects = () => {
       <h2>Projects</h2>
       <article className={classes.projectsImagesContainer}>
         <div>
-          <img src={SibiuGuide} alt="Sibiu City Guide" />
-          <p>Sibiu City Guide</p>
+          <a href="" target="_blank" rel="noreferrer">
+            <img
+              src={SibiuGuide}
+              alt="Sibiu City Guide"
+              className={classes.projectImage}
+            />
+            <p>Sibiu City Guide</p>
+          </a>
         </div>
         <div>
-          <img src={Sushi} alt="Sushi Restaurant" />
-          <p>Sushi Restaurant</p>
+          <a href="" target="_blank" rel="noreferrer">
+            <img
+              src={Sushi}
+              alt="Sushi Restaurant"
+              className={classes.projectImage}
+            />
+            <p>Sushi Restaurant</p>
+          </a>
         </div>
         <div>
-          <img src={Recipe} alt="Recipe Website" />
-          <p>Recipe Website</p>
+          <a
+            href="https://myfoodrecipeapp.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={Recipe}
+              alt="Recipe Website"
+              className={classes.projectImage}
+            />
+            <p>Recipe Website</p>
+          </a>
         </div>
       </article>
     </section>

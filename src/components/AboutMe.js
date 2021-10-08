@@ -24,16 +24,9 @@ const AboutMe = () => {
           We pride ourselves on our meticulous craftsmanship, ethical
           production, and accessible prices.
         </p>
-        <br />
-        <p>
-          We are Elven. Our candles are inspired by magic, myths, nature and
-          memories. We hand-pour our candles in our LA studio using sustainable
-          soy wax.
-        </p>
-        <br />
 
         <a href={CV} target="_blank" rel="noreferrer" className={classes.btn}>
-          DOWNLOAD CV
+          MY RESUME
         </a>
       </article>
     </section>

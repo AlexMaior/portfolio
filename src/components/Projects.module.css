@@ -7,8 +7,9 @@
 }
 
 .projectsContainer h2 {
-  font-size: 40px;
+  font-size: 30px;
   color: #aab83e;
+  padding-bottom: 50px;
 }
 
 .projectsImagesContainer {
@@ -19,18 +20,52 @@
   width: 75%;
   margin: auto;
 }
-
 .projectsImagesContainer div {
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.projectsImagesContainer div a {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectsImagesContainer div p {
-  color: #aab83e;
-  font-size: 23px;
+  /* position: absolute; */
+  color: #b9ab9d;
+  font-size: 18px;
+  background-color: #34353a;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 7px 0px;
 }
 
-.projectsImagesContainer div img {
-  width: 300px;
-  padding: 30px;
+.projectImage {
+  width: 200px;
+}
+
+@media only screen and (min-width: 400px) {
+  .projectImage {
+    width: 300px;
+    padding: 0;
+    filter: saturate(0) brightness(0.7);
+    transition: 0.3s;
+  }
+
+  .projectsImagesContainer div p {
+    width: 100%;
+    color: #aab83e;
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+
+  .projectsImagesContainer div:hover p {
+    color: #b9ab9d;
+  }
+  .projectImage:hover {
+    filter: saturate(1) brightness(1);
+  }
 }

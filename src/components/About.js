@@ -11,17 +11,15 @@ const About = () => {
       <section className={classes.aboutSection}>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
             <img src={Fast} alt="Fast" className={classes.overlap} />
           </div>
           <p className={classes.color}>Fast</p>
-          <p>
-            Having a fast site is essential for keeping visitors on your page
-          </p>
+          <p>A fast site is essential for keeping visitors on your page</p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
             <img
               src={Responsive}
               alt="Responsive"
@@ -33,7 +31,7 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
             <img src={Dynamic} alt="Dynamic" className={classes.overlap} />
           </div>
           <p className={classes.color}>Dynamic</p>
@@ -41,11 +39,11 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" />
+            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
             <img src={Intuitive} alt="Intuitive" className={classes.overlap} />
           </div>
           <p className={classes.color}>Intuitive</p>
-          <p>Professional looking websites, easy to use and intuitive UX/UI.</p>
+          <p>Professional websites, easy to use and intuitive UX/UI.</p>
         </article>
       </section>
     </div>

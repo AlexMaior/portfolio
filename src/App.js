@@ -27,7 +27,7 @@ function App() {
         <p>I'm a full-stack web developer.</p>
         <br />
         <Button className={classes.btn} onClick={executeScroll}>
-          VIEW MY WORK
+          View my work
           <FaArrowRight className={classes.arrow} />
         </Button>
       </section>

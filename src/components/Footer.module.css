@@ -1,12 +1,13 @@
 .footerContainer {
   background-color: #242426;
-  height: 250px;
+  height: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .arrowImg {
   margin-top: -30px;
+  width: 40px;
 }
 
 .arrowImg:hover {
@@ -21,6 +22,7 @@
 }
 
 .footerText {
+  font-size: 14px;
   margin: auto 0;
   color: #b9ab9d;
 }

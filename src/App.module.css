@@ -7,6 +7,11 @@
   src: url("./Font/Montserrat/Montserrat-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: MontserratMedium;
+  src: url("./Font/Montserrat/Montserrat-Medium.ttf");
+}
+
 .App {
   text-align: center;
   font-family: "Montserrat";
@@ -42,7 +47,7 @@ span {
   background-color: rgba(0, 255, 255, 0);
   color: #aab83e;
   border-radius: 9px;
-  height: 80px;
+  padding: 10px;
   display: flex;
   margin-top: 5vh;
   margin-left: auto;
@@ -51,7 +56,6 @@ span {
   align-items: center;
   transition-duration: 0.7s;
   font-family: "MontserratSemiBold";
-  font-size: 26px;
 }
 
 .arrow {
@@ -104,14 +108,15 @@ span {
 
 @media only screen and (min-width: 800px) {
   .btn {
-    width: 360px;
-    font-size: 26px;
+    width: 300px;
+    font-size: 22px;
   }
   .arrow {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .titleDescription {
-    font-size: 60px;
+    font-size: 40px;
+    letter-spacing: 2px;
   }
 }

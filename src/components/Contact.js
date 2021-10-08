@@ -5,10 +5,12 @@ import Github from "../Images/github.svg";
 import Instagram from "../Images/instagram.svg";
 import Linkedin from "../Images/linkedin.svg";
 import { Fragment } from "react";
+import Triangle from "../Images/triangle.svg";
 
 const Contact = () => {
   return (
     <Fragment>
+      <img src={Triangle} className={classes.triangle} />
       <section className={classes.contactContainer}>
         <h2>Ways To Contact Me</h2>
         <p className={classes.contactCTA}>

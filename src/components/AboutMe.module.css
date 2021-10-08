@@ -1,10 +1,10 @@
 .aboutMeContainer {
-  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 .imageContainer {
@@ -12,11 +12,16 @@
 }
 
 .border {
-  display: none;
+  display: flex;
+  margin-top: 28px;
+  height: 310px;
 }
 
 .overlap {
-  width: 200px;
+  position: absolute;
+  margin-left: 28px;
+  width: auto;
+  height: 310px;
 }
 
 .aboutMeImageContainer {
@@ -32,10 +37,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 360px;
 }
 
 .textContainer h2 {
-  font-size: 40px;
+  font-size: 30px;
   color: #b9ab9d;
   margin-top: 0;
 }
@@ -47,22 +53,24 @@
 
 .textContainer p {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   color: #b9ab9d;
+  font-family: "MontserratMedium";
 }
 
 .btn {
   text-align: center;
   width: 220px;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #aab83e;
   color: #aab83e;
-  border-radius: 9px;
+  border-radius: 10px;
   background-color: #aab83e00;
-  font-size: 26px;
+  font-size: 20px;
   transition-duration: 0.7s;
   font-family: "MontserratSemiBold";
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -71,9 +79,9 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .overlap {
+  /* .overlap {
     width: 250px;
-  }
+  } */
 
   .textContainer {
     width: 80%;
@@ -88,24 +96,27 @@
   .border {
     display: flex;
     margin-top: 28px;
-    height: 436px;
+    height: 310px;
   }
 
   .overlap {
     position: absolute;
-    margin-left: 20px;
-    height: 436px;
+    margin-left: 28px;
+    height: 310px;
     width: auto;
   }
 
   .aboutMeImageContainer {
     display: flex;
-    height: 436px;
+    height: 360px;
   }
 
   .textContainer {
     text-align: left;
+    align-items: flex-start;
+    justify-content: space-around;
     width: 60%;
+    margin-top: 0px;
   }
 
   .imageContainer {
@@ -113,12 +124,6 @@
   }
 
   .btn {
-    width: 320px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .overlap {
-    margin-left: 35px;
+    width: 200px;
   }
 }
