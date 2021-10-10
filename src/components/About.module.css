@@ -40,6 +40,7 @@
 .color {
   color: #c9a456;
   margin-bottom: 5px;
+  margin-top: 0px;
   font-family: "MontserratSemiBold";
 }
 
@@ -49,4 +50,5 @@
 
 .aboutWebsitesDescription {
   color: #b9ab9d;
+  margin-top: 0;
 }

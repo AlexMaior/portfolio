@@ -47,7 +47,22 @@
   width: 200px;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 350px) {
+  .projectImage {
+    width: 300px;
+    padding: 0;
+    transition: 0.3s;
+  }
+
+  .projectsImagesContainer div p {
+    width: 100%;
+    color: #aab83e;
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
   .projectImage {
     width: 300px;
     padding: 0;

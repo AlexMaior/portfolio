@@ -24,7 +24,7 @@
   align-items: center;
   position: absolute;
   background-color: #242426ec;
-  top: 95px;
+  top: 65px;
   width: 100%;
 }
 
@@ -33,18 +33,26 @@
   flex-direction: column;
 }
 
-ul {
+.navList,
+.social,
+.logoAndBurger {
   margin: 0;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-ul li {
+.logoAndBurger {
+  padding: 10px 0px;
+}
+
+.navList li,
+.social li {
   padding: 25px 0px;
 }
 
-ul li:hover {
+.navList li:hover,
+.social li:hover {
   color: #aab83e;
   cursor: pointer;
 }
@@ -133,7 +141,13 @@ ul li:hover {
     display: flex;
   }
 
-  ul li {
+  .logoAndBurger {
+    padding: 0px;
+  }
+
+  .navList li,
+  .social li,
+  .logoAndBurger li {
     padding: 0px;
   }
 
