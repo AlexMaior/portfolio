@@ -19,12 +19,12 @@ function App() {
     <div className={classes.App}>
       <div id="home"></div>
       <section className={classes.titleDescription}>
-        <p>
+        <p className={classes.appPara}>
           Hello, I'm
-          <span> Alex Maior</span>.
+          <span className={classes.appParaSpan}> Alex Maior</span>.
         </p>
         <br />
-        <p>I'm a full-stack web developer.</p>
+        <p className={classes.appPara}>I'm a full-stack web developer.</p>
         <br />
         <Button className={classes.btn} onClick={executeScroll}>
           View my work

@@ -78,6 +78,18 @@
   color: #34353a;
 }
 
+.getInTouch {
+  color: #aab83e;
+}
+
+.getInTouch:hover {
+  cursor: pointer;
+}
+
+.color {
+  color: #aab83e;
+}
+
 @media only screen and (min-width: 700px) {
   /* .overlap {
     width: 250px;
@@ -117,6 +129,10 @@
     justify-content: space-around;
     width: 60%;
     margin-top: 0px;
+  }
+
+  .textContainer p {
+    margin: 0;
   }
 
   .imageContainer {

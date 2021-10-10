@@ -15,7 +15,9 @@ const About = () => {
             <img src={Fast} alt="Fast" className={classes.overlap} />
           </div>
           <p className={classes.color}>Fast</p>
-          <p>A fast site is essential for keeping visitors on your page</p>
+          <p className={classes.aboutWebsitesDescription}>
+            A fast site is essential for keeping visitors on your page
+          </p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
@@ -27,7 +29,9 @@ const About = () => {
             />
           </div>
           <p className={classes.color}>Responsive</p>
-          <p>Layouts that look good and work on any device.</p>
+          <p className={classes.aboutWebsitesDescription}>
+            Layouts that look good and work on any device.
+          </p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
@@ -35,7 +39,9 @@ const About = () => {
             <img src={Dynamic} alt="Dynamic" className={classes.overlap} />
           </div>
           <p className={classes.color}>Dynamic</p>
-          <p>Great layouts and websites that have great functionality.</p>
+          <p className={classes.aboutWebsitesDescription}>
+            Great layouts and websites that have great functionality.
+          </p>
         </article>
         <article>
           <div className={classes.aboutIcons}>
@@ -43,7 +49,9 @@ const About = () => {
             <img src={Intuitive} alt="Intuitive" className={classes.overlap} />
           </div>
           <p className={classes.color}>Intuitive</p>
-          <p>Professional websites, easy to use and intuitive UX/UI.</p>
+          <p className={classes.aboutWebsitesDescription}>
+            Professional websites, easy to use and intuitive UX/UI.
+          </p>
         </article>
       </section>
     </div>

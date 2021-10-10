@@ -10,7 +10,7 @@ import Triangle from "../Images/triangle.svg";
 const Contact = () => {
   return (
     <Fragment>
-      <img src={Triangle} className={classes.triangle} />
+      <img src={Triangle} className={classes.triangle} alt="triangle" />
       <section className={classes.contactContainer}>
         <h2>Ways To Contact Me</h2>
         <p className={classes.contactCTA}>

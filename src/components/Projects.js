@@ -9,7 +9,7 @@ const Projects = () => {
       <h2>Projects</h2>
       <article className={classes.projectsImagesContainer}>
         <div>
-          <a href="" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             <img
               src={SibiuGuide}
               alt="Sibiu City Guide"
@@ -19,7 +19,7 @@ const Projects = () => {
           </a>
         </div>
         <div>
-          <a href="" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             <img
               src={Sushi}
               alt="Sushi Restaurant"

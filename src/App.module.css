@@ -29,14 +29,14 @@
   background-color: rgba(0, 255, 255, 0);
 }
 
-p {
+.appPara {
   color: #b9ab9d;
   margin: 0;
   padding: 0;
   display: inline;
 }
 
-span {
+.appParaSpan {
   color: #aab83e;
   padding: 0;
   margin: 0;
