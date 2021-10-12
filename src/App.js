@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import classes from "./App.module.css";
 import Button from "./components/Button";
 import { FaArrowRight } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 import { ParticlesComponent } from "./components/ParticlesComponent";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,10 @@ function App() {
   };
   return (
     <div className={classes.App}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alex Maior Portfolio </title>
+      </Helmet>
       <div id="home"></div>
       <section className={classes.titleDescription}>
         <p className={classes.appPara}>
