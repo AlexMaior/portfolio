@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "./App.module.css";
 import Button from "./components/Button";
 import { FaArrowRight } from "react-icons/fa";
@@ -10,8 +10,13 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ReactGa from "react-ga";
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("UA-146297874-1");
+    ReactGa.pageview("/");
+  }, []);
   const myRef = useRef(null);
   const executeScroll = () => {
     myRef.current.scrollIntoView({ behavior: "smooth" });
