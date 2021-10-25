@@ -19,9 +19,8 @@ const AboutMe = () => {
           <span className={classes.underline}>Abo</span>ut Me
         </h2>
         <p>
-          Hi, I'm Alex, a full-stack web developer with a pasion for Front-end.
-          I like to code things, and enjoy bringing ideas to life in the
-          browser.
+          Hi! I'm Alex, a full-stack web developer with a passion for Front-end.
+          I like to code and enjoy bringing ideas to life in the browser.
         </p>
         <p>
           Languages I speak: <span className={classes.color}>HTML</span>,&nbsp;
