@@ -1,5 +1,5 @@
 import classes from "./Projects.module.css";
-import SibiuGuide from "../Images/ssg.jpg";
+import Romania from "../Images/romania.jpg";
 import Sushi from "../Images/sushi.jpg";
 import Recipe from "../Images/foodApp.jpg";
 
@@ -10,13 +10,13 @@ const Projects = () => {
       <article className={classes.projectsImagesContainer}>
         <div>
           <a
-            href="https://sibiucityguide.netlify.app/"
+            href="https://romania-turistica-b36ae.web.app/"
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src={SibiuGuide}
-              alt="Sibiu City Guide"
+              src={Romania}
+              alt="Romania Turistica"
               className={classes.projectImage}
             />
             <p>Sibiu City Guide</p>
