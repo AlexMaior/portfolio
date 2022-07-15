@@ -19,7 +19,7 @@ const Projects = () => {
               alt="Romania Turistica"
               className={classes.projectImage}
             />
-            <p>Sibiu City Guide</p>
+            <p>Romania Turistica</p>
           </a>
         </div>
         <div>
