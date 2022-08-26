@@ -11,13 +11,13 @@ const Form = (props) => {
     setInput(event.target.value);
   };
 
-  const onClickHandler = (event) => {
+  const onClickHandler = async (event) => {
     event.preventDefault();
     if (isNaN(input)) {
       alert("Please enter a number");
     } else {
-      const url = `http://numbersapi.com/${input}/trivia?notfound=floor&fragment/`;
-      fetch(url)
+      const url = `http://numbersapi.com/${input}/trivia?notfound=floor&fragment`;
+      await fetch(url)
         .then((response) => response.text())
         .then((data) => setResult(data));
     }
