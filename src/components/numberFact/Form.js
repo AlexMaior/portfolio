@@ -25,7 +25,7 @@ const Form = (props) => {
   };
   return (
     <div className={classes.generalContainer}>
-      <img src={Qman} className={classes.imgQman} />
+      <img src={Qman} alt="questin man" className={classes.imgQman} />
       <form onSubmit={onClickHandler}>
         <br />
         <div className={classes.questionsContainer}>
