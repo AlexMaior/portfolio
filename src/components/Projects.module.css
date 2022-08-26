@@ -7,8 +7,8 @@
 }
 
 .projectsContainer h2 {
-  font-size: 30px;
-  color: #aab83e;
+  font-size: 40px;
+  color: #c9a456;
   padding-bottom: 50px;
 }
 
@@ -42,6 +42,16 @@
   width: 100%;
   padding: 7px 0px;
   margin-top: 0;
+}
+
+.divPlaceholder {
+  background-color: #34353a;
+  max-width: 900px;
+  min-width: 270px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 40px;
 }
 
 .projectImage {

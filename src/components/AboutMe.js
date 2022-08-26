@@ -15,9 +15,7 @@ const AboutMe = () => {
         </div>
       </article>
       <article className={classes.textContainer}>
-        <h2>
-          <span className={classes.underline}>Abo</span>ut Me
-        </h2>
+        <h2>About Me</h2>
         <p>
           Hi! I'm Alex, a full-stack web developer with a passion for Front-end.
           I like to code and enjoy bringing ideas to life in the browser.

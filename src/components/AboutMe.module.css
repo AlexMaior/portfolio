@@ -41,14 +41,10 @@
 }
 
 .textContainer h2 {
-  font-size: 30px;
-  color: #b9ab9d;
+  font-size: 40px;
+  color: #c9a456;
   margin-top: 0;
-}
-
-.underline {
-  color: #b9ab9d;
-  border-bottom: 3px solid #aab83e;
+  margin-bottom: 0;
 }
 
 .textContainer p {

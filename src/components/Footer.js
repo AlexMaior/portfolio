@@ -17,6 +17,7 @@ const Footer = () => {
           <img src={upArrow} alt="Up Arrow" className={classes.arrowImg} />
         </Link>
       </article>
+
       <article className={classes.footerTextContainer}>
         <p className={classes.footerText}>Copyright 2021 ALEX MAIOR</p>
       </article>

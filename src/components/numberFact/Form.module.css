@@ -1,0 +1,157 @@
+.generalContainer {
+  position: relative;
+}
+
+.imgQman {
+  width: 15%;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.formContainer {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.formContainer label {
+  color: #b9ab9d;
+  margin: 0;
+}
+.formContainer input {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #b9ab9d;
+  background-color: #34353a;
+  border-radius: 4px;
+  color: #b9ab9d;
+  text-align: center;
+  width: 200px;
+}
+
+.factBtn {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #aab83e;
+  border: 1px solid #aab83e;
+}
+
+.factBtn:hover {
+  background-color: black;
+  color: #aab83e;
+  cursor: pointer;
+}
+
+.formQuestion {
+  color: #aab83e;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.formQuestion2 {
+  color: #b9ab9d;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.footerAnswer {
+  color: #c9a456;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.formQuestion,
+.formQuestion2 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 40px;
+  font-family: "MontserratExtraLight";
+}
+
+.formQuestion2 span {
+  font-family: "MontserratSemiBold";
+}
+
+.resultTextContainer {
+  padding-bottom: 40px;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 950px) {
+  .imgQman {
+    left: 0;
+    right: 0;
+    top: -60px;
+    margin: 0 auto;
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .imgQman {
+    top: -50px;
+  }
+  .formQuestion,
+  .formQuestion2 {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .formContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+  }
+
+  .formContainer input,
+  .factBtn {
+    margin-bottom: 20px;
+  }
+  .factBtn {
+    margin-left: 10px;
+  }
+
+  .footerAnswer {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .generalContainer img {
+    margin-top: 30px;
+  }
+  .imgQman {
+    position: relative;
+    top: 0;
+    margin: 0;
+    width: 60px;
+  }
+  .formQuestion {
+    margin-top: 0;
+  }
+  .formContainer {
+    flex-direction: column;
+  }
+
+  .factBtn {
+    margin: 0;
+  }
+}

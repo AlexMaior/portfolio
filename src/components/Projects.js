@@ -1,7 +1,9 @@
+import React from "react";
 import classes from "./Projects.module.css";
 import Romania from "../Images/romania.jpg";
 import Sushi from "../Images/sushi.jpg";
 import Recipe from "../Images/foodApp.jpg";
+import Form from "./numberFact/Form";
 
 const Projects = () => {
   return (
@@ -19,7 +21,7 @@ const Projects = () => {
               alt="Romania Turistica"
               className={classes.projectImage}
             />
-            <p>Romania Turistica</p>
+            <p>Visit Romania</p>
           </a>
         </div>
         <div>
@@ -51,6 +53,10 @@ const Projects = () => {
           </a>
         </div>
       </article>
+      <article className={classes.divPlaceholder}>
+        <Form />
+      </article>
+      <br></br>
     </section>
   );
 };

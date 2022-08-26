@@ -1,6 +1,6 @@
 h2 {
-  font-size: 30px;
-  color: #aab83e;
+  font-size: 40px;
+  color: #c9a456;
   margin-bottom: 10px;
   /* margin-top: 0px; */
 }
@@ -27,6 +27,7 @@ h2 {
   flex-wrap: wrap;
   padding: 80px 0px;
   width: 70%;
+  max-width: 1000px;
 }
 
 .contactMethodsContainer div {
