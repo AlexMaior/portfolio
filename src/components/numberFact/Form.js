@@ -16,7 +16,7 @@ const Form = (props) => {
     if (isNaN(input)) {
       alert("Please enter a number");
     } else {
-      const url = `http://numbersapi.com/${input}/trivia?notfound=floor&fragment`;
+      const url = `http://numbersapi.com/${input}/trivia?notfound=floor&fragment/`;
       fetch(url)
         .then((response) => response.text())
         .then((data) => setResult(data));
