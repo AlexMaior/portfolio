@@ -1,56 +1,108 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import classes from "./Form.module.css";
 import Qman from "../../Images/Q_man_2000.png";
 
-const Form = (props) => {
-  const [input, setInput] = useState("");
-  const [result, setResult] = useState("");
+const Form = () => {
+  const [data, setData] = useState([]);
 
-  const inputChangeHandler = (event) => {
-    setInput(event.target.value);
-  };
+  const [birthToday, setBirthToday] = useState("");
+  const [deathToday, setDeathToday] = useState("");
+  const [eventToday, setEventToday] = useState("");
+  const [selectedToday, setSelectedToday] = useState("");
 
-  const onClickHandler = async (event) => {
+  useEffect(() => {
+    let today = new Date();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+    const url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${month}/${day}`;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setData(data);
+      });
+  }, []);
+  let birth, death, event1, selected1;
+  const onClickHandler = (event) => {
     event.preventDefault();
-    if (isNaN(input)) {
-      alert("Please enter a number");
-    } else {
-      const url = `http://numbersapi.com/${input}/trivia?notfound=floor&fragment`;
-      await fetch(url)
-        .then((response) => response.text())
-        .then((data) => setResult(data));
-    }
-    setInput("");
+    birth = Math.floor(Math.random() * data.births.length);
+    death = Math.floor(Math.random() * data.deaths.length);
+    event1 = Math.floor(Math.random() * data.events.length);
+    selected1 = Math.floor(Math.random() * data.selected.length);
+
+    setBirthToday(
+      data.births[birth].text.trim() === 0 ? (
+        <p>No data for today</p>
+      ) : (
+        <div>
+          <p>
+            In {data.births[birth].year}, {data.births[birth].text}, was born.
+          </p>
+        </div>
+      )
+    );
+    setDeathToday(
+      data.deaths[death].text.trim() === 0 ? (
+        <p>No data for today</p>
+      ) : (
+        <div>
+          <p>
+            In {data.deaths[death].year}, {data.deaths[death].text} has passed
+            away.
+          </p>
+        </div>
+      )
+    );
+    setEventToday(
+      data.events[event1].text.trim() === 0 ? (
+        <p>No data for today</p>
+      ) : (
+        <div>
+          <p>
+            On this day in {data.events[event1].year},{" "}
+            {data.events[event1].text}
+          </p>
+        </div>
+      )
+    );
+    setSelectedToday(
+      data.selected[selected1].text.trim() === 0 ? (
+        <p>No data for today</p>
+      ) : (
+        <div>
+          <p>Notable historical event:</p>
+          <p>{data.selected[selected1].text}</p>
+        </div>
+      )
+    );
   };
   return (
     <div className={classes.generalContainer}>
-      <img src={Qman} alt="questin man" className={classes.imgQman} />
+      <img src={Qman} alt="question man" className={classes.imgQman} />
       <form onSubmit={onClickHandler}>
         <br />
         <div className={classes.questionsContainer}>
-          <p className={classes.formQuestion}>Would you like to learn</p>
+          <p className={classes.formQuestion}>Today</p>
           <p className={classes.formQuestion2}>
-            an interesting <span>fact</span> about a number?
+            <span>in history</span>
           </p>
         </div>
         <div className={classes.formContainer}>
-          <input
-            placeholder="enter a number"
-            onChange={inputChangeHandler}
-            value={input}
-            required
-          ></input>
-          <Button type="submit" class={classes.factBtn}>
+          <Button
+            disabled={data.length === 0 ? "disabled" : false}
+            type="submit"
+            class={classes.factBtn}
+          >
             LEARN
           </Button>
         </div>
         <div className={classes.resultTextContainer}>
-          {result ? (
-            <p className={classes.footerAnswer}>"{result}"</p>
-          ) : (
-            <span></span>
-          )}
+          <span>{birthToday}</span>
+
+          <span>{deathToday}</span>
+          <span>{eventToday}</span>
+          <span>{selectedToday}</span>
         </div>
       </form>
     </div>
