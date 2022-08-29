@@ -71,6 +71,14 @@ h2 {
 .triangle {
   width: 100%;
 }
+@media only screen and (max-width: 550px) {
+  .contactContainer h2 {
+    width: 75%;
+  }
+  .contactCTA {
+    width: 75%;
+  }
+}
 
 @media only screen and (min-width: 550px) {
   .contactContainer {
