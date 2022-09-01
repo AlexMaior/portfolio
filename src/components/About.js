@@ -4,14 +4,22 @@ import Responsive from "../Images/devices.svg";
 import Dynamic from "../Images/engineering.svg";
 import Intuitive from "../Images/lamp.svg";
 import Polygon from "../Images/Polygon.svg";
+import PolygonLight from "../Images/PolygonLight.svg"; //Asta este merginea galbena
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const About = () => {
+  const darkTheme = useContext(ThemeContext);
   return (
     <div className={classes.aboutSectionContainer}>
       <section className={classes.aboutSection}>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
+            <img
+              src={darkTheme ? Polygon : PolygonLight}
+              alt="Polygon Shape"
+              className={classes.poli}
+            />
             <img src={Fast} alt="Fast" className={classes.overlap} />
           </div>
           <p className={classes.color}>Fast</p>
@@ -21,7 +29,11 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
+            <img
+              src={darkTheme ? Polygon : PolygonLight}
+              alt="Polygon Shape"
+              className={classes.poli}
+            />
             <img
               src={Responsive}
               alt="Responsive"
@@ -35,7 +47,11 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
+            <img
+              src={darkTheme ? Polygon : PolygonLight}
+              alt="Polygon Shape"
+              className={classes.poli}
+            />
             <img src={Dynamic} alt="Dynamic" className={classes.overlap} />
           </div>
           <p className={classes.color}>Dynamic</p>
@@ -45,7 +61,11 @@ const About = () => {
         </article>
         <article>
           <div className={classes.aboutIcons}>
-            <img src={Polygon} alt="Polygon Shape" className={classes.poli} />
+            <img
+              src={darkTheme ? Polygon : PolygonLight}
+              alt="Polygon Shape"
+              className={classes.poli}
+            />
             <img src={Intuitive} alt="Intuitive" className={classes.overlap} />
           </div>
           <p className={classes.color}>Intuitive</p>

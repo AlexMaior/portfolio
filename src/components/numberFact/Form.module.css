@@ -38,15 +38,34 @@
   cursor: pointer;
 }
 
+.titleContainer {
+  margin-left: 40px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.title {
+  color: #c9a456;
+  font-size: 20px;
+}
+
+.questionsContainer {
+  max-width: 630px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .formQuestion {
+  margin-top: 0;
   color: #aab83e;
   font-size: 40px;
-  margin-bottom: 0;
 }
 .formQuestion2 {
+  margin-top: 0;
   color: #b9ab9d;
-  font-size: 30px;
-  margin-top: 0px;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 .formQuestion,
@@ -67,22 +86,9 @@
   text-align: left;
   text-align: justify;
 }
-.titleContainer {
-  border-bottom: 1px solid #b9ab9d;
-}
 
 .resultTextContainer p {
-  color: #b9ab9d;
-}
-
-.title {
-  color: #b9ab9d;
-  font-size: 20px;
-}
-
-.questionsContainer {
-  max-width: 630px;
-  margin-left: 40px;
+  color: #c9a456;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -119,13 +125,6 @@
     right: 0;
     width: 60px;
   }
-}
-
-@media only screen and (max-width: 850px) {
-  .questionsContainer {
-    display: flex;
-    flex-direction: column;
-  }
 
   .formQuestion {
     text-align: center;
@@ -135,10 +134,16 @@
   .formQuestion2 {
     margin-top: 0;
     text-align: center;
-    font-size: 30px;
+  }
+
+  .titleContainer {
+    text-align: center;
+    margin: 20px 0;
   }
 
   .questionsContainer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;

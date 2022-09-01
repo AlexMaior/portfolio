@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../Images/Logo3.png";
 import Github from "../Images/github.svg";
 import Instagram from "../Images/instagram.svg";
@@ -6,16 +6,20 @@ import Linkedin from "../Images/linkedin.svg";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import "./Navbar.css";
+import { ThemeContext } from "../App";
+import "../constants.css";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState("false");
+  const darkTheme = useContext(ThemeContext);
 
-  const ToggleChange = () => {
+  console.log(darkTheme);
+  const ToggleChange = (props) => {
     setIsActive(!isActive);
   };
 
   return (
-    <nav className="nav">
+    <nav className={darkTheme ? "nav navDark" : "nav navLight"}>
       <section className="navContent">
         <article className="navContainers">
           <ul className="logoAndBurger">
@@ -44,7 +48,13 @@ const Navbar = () => {
           </ul>
         </article>
 
-        <div className={`navListContainers ${isActive ? "displ" : ""}`}>
+        <div
+          className={
+            darkTheme
+              ? `navDark navListContainers ${isActive ? "displ" : ""}`
+              : `navLight navListContainers ${isActive ? "displ" : ""}`
+          }
+        >
           <article className="navContainers">
             <ul className="navList">
               <li>

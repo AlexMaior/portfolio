@@ -1,9 +1,17 @@
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
 import Particles from "react-particles-js";
 import classes from "./ParticlesComponent.module.css";
 export const ParticlesComponent = () => {
+  const darkTheme = useContext(ThemeContext);
+
   return (
     <Particles
-      className={classes.particles}
+      className={
+        darkTheme
+          ? `${classes.particles} ${classes.particlesDark}`
+          : `${classes.particles} ${classes.particlesLight}`
+      }
       params={{
         particles: {
           number: {
@@ -14,7 +22,7 @@ export const ParticlesComponent = () => {
             },
           },
           color: {
-            value: "#fff",
+            value: darkTheme ? "#fff" : "#000",
           },
 
           shape: {

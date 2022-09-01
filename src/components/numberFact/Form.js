@@ -79,16 +79,16 @@ const Form = () => {
   };
   return (
     <div className={classes.generalContainer}>
-      <div className={classes.titleContainer}>
-        <span className={classes.title}>API Project</span>
-      </div>
       <img src={Qman} alt="question man" className={classes.imgQman} />
       <form onSubmit={onClickHandler}>
         <br />
+        <div className={classes.titleContainer}>
+          <span className={classes.title}>API project</span>
+        </div>
         <div className={classes.questionsContainer}>
-          <p className={classes.formQuestion}> Discover what happened today</p>
+          <p className={classes.formQuestion}> Today</p>
           <p className={classes.formQuestion2}>
-            <span>in history</span>
+            in<span> history</span>
           </p>
         </div>
         <div className={classes.formContainer}>

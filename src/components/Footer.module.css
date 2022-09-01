@@ -1,8 +1,18 @@
 .footerContainer {
-  background-color: #242426;
+  /* background-color: #242426; */
   height: 100px;
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
+}
+
+.lightFooter {
+  /* background-color: #e7e7e7; */
+  background-color: var(--bg-color-light);
+}
+
+.darkFooter {
+  background-color: var(--bg-color-dark);
 }
 
 .arrowImg {

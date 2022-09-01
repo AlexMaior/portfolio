@@ -40,10 +40,20 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #242426;
+  /* background-color: #242426; */
   min-width: 230px;
   padding: 20px 25px;
   border-radius: 9px;
+  transition: 0.3s;
+}
+
+.lightContainer {
+  background-color: #e7e7e7;
+}
+
+.darkContainer {
+  /* background-color: #242426; */
+  background-color: var(--bg-color-dark);
 }
 
 .mailImg,
