@@ -1,4 +1,5 @@
 import upArrow from "../Images/upArrow.svg";
+import upArrowLight from "../Images/upArrowLight.svg";
 import classes from "./Footer.module.css";
 import { Link } from "react-scroll";
 import { useContext } from "react";
@@ -24,12 +25,24 @@ const Footer = () => {
           smooth={true}
           duration={500}
         >
-          <img src={upArrow} alt="Up Arrow" className={classes.arrowImg} />
+          <img
+            src={darkTheme ? upArrow : upArrowLight}
+            alt="Up Arrow"
+            className={classes.arrowImg}
+          />
         </Link>
       </article>
 
       <article className={classes.footerTextContainer}>
-        <p className={classes.footerText}>Copyright 2021 ALEX MAIOR</p>
+        <p
+          className={
+            darkTheme
+              ? `${classes.footerText} ${classes.footerTextDark}`
+              : `${classes.footerText} ${classes.footerTextLight}`
+          }
+        >
+          Copyright 2021 ALEX MAIOR
+        </p>
       </article>
     </section>
   );

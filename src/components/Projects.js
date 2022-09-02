@@ -17,7 +17,15 @@ const Projects = () => {
           : `${classes.projectsContainer} ${classes.lightProj}`
       }
     >
-      <h2>Projects</h2>
+      <h2
+        className={
+          darkTheme
+            ? `${classes.projectsContainerH2} ${classes.projectsContainerH2Dark}`
+            : `${classes.projectsContainerH2} ${classes.projectsContainerH2Light}`
+        }
+      >
+        Projects
+      </h2>
       <article className={classes.projectsImagesContainer}>
         <div>
           <a
@@ -34,7 +42,15 @@ const Projects = () => {
                   : `${classes.projectImage} ${classes.projectImageLight}`
               }
             />
-            <p>Visit Romania</p>
+            <p
+              className={
+                darkTheme
+                  ? `${classes.projectName} ${classes.projectNameDark}`
+                  : `${classes.projectName} ${classes.projectNameLight}`
+              }
+            >
+              Visit Romania
+            </p>
           </a>
         </div>
         <div>
@@ -52,7 +68,15 @@ const Projects = () => {
                   : `${classes.projectImage} ${classes.projectImageLight}`
               }
             />
-            <p>Sushi Restaurant</p>
+            <p
+              className={
+                darkTheme
+                  ? `${classes.projectName} ${classes.projectNameDark}`
+                  : `${classes.projectName} ${classes.projectNameLight}`
+              }
+            >
+              Sushi Restaurant
+            </p>
           </a>
         </div>
         <div>
@@ -70,7 +94,15 @@ const Projects = () => {
                   : `${classes.projectImage} ${classes.projectImageLight}`
               }
             />
-            <p>Recipe Website</p>
+            <p
+              className={
+                darkTheme
+                  ? `${classes.projectName} ${classes.projectNameDark}`
+                  : `${classes.projectName} ${classes.projectNameLight}`
+              }
+            >
+              Recipe Website
+            </p>
           </a>
         </div>
       </article>

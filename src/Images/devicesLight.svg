@@ -1,0 +1,22 @@
+<svg id="devices" xmlns="http://www.w3.org/2000/svg" width="58.085" height="45" viewBox="0 0 58.085 45">
+  <g id="Group_272" data-name="Group 272" transform="translate(0 0)">
+    <g id="Group_271" data-name="Group 271" transform="translate(0 0)">
+      <path id="Path_160" data-name="Path 160" d="M48.45,57.669H3.088A3.083,3.083,0,0,0,0,60.819V85.133a3.127,3.127,0,0,0,3.088,3.2H43.73V75.9a2.874,2.874,0,0,1,2.88-2.812h5.1V60.819A3.233,3.233,0,0,0,48.45,57.669ZM14.335,68.738H22.5a1.361,1.361,0,1,1,0,2.722H14.335a1.361,1.361,0,1,1,0-2.722ZM37.2,77.81H14.335a1.361,1.361,0,1,1,0-2.722H37.2a1.361,1.361,0,1,1,0,2.722Z" transform="translate(0 -57.669)" fill="#90c900"/>
+    </g>
+  </g>
+  <g id="Group_274" data-name="Group 274" transform="translate(12.702 33.387)">
+    <g id="Group_273" data-name="Group 273">
+      <path id="Path_161" data-name="Path 161" d="M135.368,358.136h-5.444v-6.169h-9.617v6.169h-5.625a2.722,2.722,0,1,0,0,5.444h20.686a2.722,2.722,0,1,0,0-5.444Z" transform="translate(-111.961 -351.967)" fill="#90c900"/>
+    </g>
+  </g>
+  <g id="Group_276" data-name="Group 276" transform="translate(46.452 37.198)">
+    <g id="Group_275" data-name="Group 275">
+      <path id="Path_162" data-name="Path 162" d="M421.071,389.3v-3.746H409.458V389.3c0,.05.108.065.158.065h11.452C421.118,389.365,421.071,389.351,421.071,389.3Z" transform="translate(-409.458 -385.555)" fill="#90c900"/>
+    </g>
+  </g>
+  <g id="Group_278" data-name="Group 278" transform="translate(46.452 18.145)">
+    <g id="Group_277" data-name="Group 277">
+      <path id="Path_163" data-name="Path 163" d="M421.068,217.613H409.616c-.05,0-.158.041-.158.091v16.24h11.613V217.7C421.071,217.654,421.118,217.613,421.068,217.613Z" transform="translate(-409.458 -217.613)" fill="#90c900"/>
+    </g>
+  </g>
+</svg>

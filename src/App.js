@@ -51,16 +51,51 @@ function App() {
         </Helmet>
         <div id="home"></div>
         <section className={classes.titleDescription}>
-          <p className={classes.appPara}>
+          <p
+            className={
+              darkTheme
+                ? `${classes.appPara} ${classes.appParaDark}`
+                : `${classes.appPara} ${classes.appParaLight}`
+            }
+          >
             Hello, I'm
-            <span className={classes.appParaSpan}> Alex Maior</span>.
+            <span
+              className={
+                darkTheme
+                  ? `${classes.appParaSpan} ${classes.appParaSpanDark}`
+                  : `${classes.appParaSpan} ${classes.appParaSpanLight}`
+              }
+            >
+              {" "}
+              Alex Maior
+            </span>
+            .
           </p>
           <br />
-          <p className={classes.appPara}>I'm a full-stack web developer.</p>
+          <p
+            className={
+              darkTheme
+                ? `${classes.appPara} ${classes.appParaDark}`
+                : `${classes.appPara} ${classes.appParaLight}`
+            }
+          >
+            I'm a full-stack web developer.
+          </p>
           <br />
-          <Button className={classes.btn} onClick={executeScroll}>
+          <Button
+            className={
+              darkTheme
+                ? `${classes.btn} ${classes.btnDark}`
+                : `${classes.btn} ${classes.btnLight}`
+            }
+            onClick={executeScroll}
+          >
             View my work
-            <FaArrowRight className={classes.arrow} />
+            <FaArrowRight
+              className={
+                darkTheme ? `${classes.arrowDark}` : `${classes.arrowLight}`
+              }
+            />
           </Button>
         </section>
         <ParticlesComponent />

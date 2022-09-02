@@ -3,11 +3,9 @@
   padding-bottom: 100px;
   width: 100%;
   margin: auto;
-  /* background-color: #242426; */
 }
 
 .lightProj {
-  /* background-color: #e7e7e7; */
   background-color: var(--bg-color-light);
   color: #3d3834;
 }
@@ -16,15 +14,24 @@
   background-color: var(--bg-color-dark);
 }
 
-.projectsContainer h2 {
+.projectsContainerH2 {
   font-size: 40px;
-  color: #c9a456;
   padding-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.projectsContainerH2Dark {
+  color: var(--text-color-dark-orange);
+}
+
+.projectsContainerH2Light {
+  color: var(--text-color-light-orange);
 }
 
 .projectsImagesContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 70px;
   flex-wrap: wrap;
   width: 75%;
@@ -33,6 +40,7 @@
 .projectsImagesContainer div {
   transition: 0.2s;
   border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .projectsImagesContainer div a {
@@ -43,19 +51,26 @@
   align-items: center;
 }
 
-.projectsImagesContainer div p {
-  /* position: absolute; */
-  color: #b9ab9d;
+.projectName {
   font-size: 18px;
-  background-color: #34353a;
   margin-bottom: 40px;
   width: 100%;
   padding: 7px 0px;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.projectNameDark {
+  background-color: var(--bg-color-dark-2);
+  color: var(--text-color-dark-green);
+}
+
+.projectNameLight {
+  background-color: var(--bg-color-light-2);
+  color: var(--text-color-light-green);
 }
 
 .divPlaceholder {
-  /* background-color: #34353a; */
   max-width: 900px;
   min-width: 270px;
   width: 80%;
@@ -66,14 +81,10 @@
 }
 
 .lightAPIProj {
-  /* background-color: #ffffff; */
   background-color: var(--bg-color-light-2);
-  color: #3d3834;
 }
 
 .darkAPIProj {
-  /* background-color: #34353a; */
-
   background-color: var(--bg-color-dark-2);
 }
 
@@ -88,9 +99,8 @@
     transition: 0.3s;
   }
 
-  .projectsImagesContainer div p {
+  .projectName {
     width: 100%;
-    color: #aab83e;
     font-size: 20px;
     padding: 10px 0px;
   }
@@ -111,17 +121,20 @@
     filter: saturate(1) brightness(1);
   }
 
-  .projectsImagesContainer div p {
+  .projectName {
     width: 100%;
-    color: #aab83e;
     font-size: 20px;
     padding: 10px 0px;
   }
 
-  .projectsImagesContainer div:hover p {
-    color: #b9ab9d;
-  }
-  .projectImage:hover {
+  .projectsImagesContainer div:hover img {
     filter: saturate(1) brightness(1);
+  }
+
+  .projectsImagesContainer div:hover .projectNameDark {
+    color: var(--text-color-dark-grey);
+  }
+  .projectsImagesContainer div:hover .projectNameLight {
+    color: var(--text-color-light-grey);
   }
 }

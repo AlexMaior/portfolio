@@ -22,19 +22,35 @@
 
 .factBtn {
   background-color: transparent;
-  color: black;
   font-weight: bold;
   border-radius: 5px;
   padding: 10px 15px;
   font-size: 20px;
   text-transform: uppercase;
-  background-color: #aab83e;
-  border: 1px solid #aab83e;
 }
 
-.factBtn:hover {
-  background-color: black;
-  color: #aab83e;
+.factBtnDark {
+  color: var(--text-color-dark-green);
+  background-color: #aab83e00;
+  border: 1px solid var(--text-color-dark-green);
+}
+.factBtnDark:hover {
+  color: black;
+  background-color: var(--text-color-dark-green);
+  border: 1px solid var(--text-color-dark-green);
+  cursor: pointer;
+}
+
+.factBtnLight {
+  color: var(--text-color-light-green);
+  background-color: #90c90000;
+  border: 1px solid var(--text-color-light-green);
+}
+
+.factBtnLight:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--text-color-light-green);
+  border: 1px solid var(--text-color-light-green);
   cursor: pointer;
 }
 
@@ -45,8 +61,15 @@
   margin-bottom: 20px;
 }
 .title {
-  color: #c9a456;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.titleDark {
+  color: var(--text-color-dark-orange);
+}
+
+.titleLight {
+  color: var(--text-color-light-orange);
 }
 
 .questionsContainer {
@@ -58,14 +81,29 @@
 
 .formQuestion {
   margin-top: 0;
-  color: #aab83e;
-  font-size: 40px;
+  font-size: 50px;
 }
+
+.formQuestionDark {
+  color: var(--text-color-dark-green);
+}
+
+.formQuestionLight {
+  color: var(--text-color-light-green);
+}
+
 .formQuestion2 {
   margin-top: 0;
-  color: #b9ab9d;
-  font-size: 40px;
+  font-size: 50px;
   margin-left: 10px;
+}
+
+.formQuestion2Dark {
+  color: var(--text-color-dark-grey);
+}
+
+.formQuestion2Light {
+  color: var(--text-color-light-grey);
 }
 
 .formQuestion,
@@ -87,8 +125,12 @@
   text-align: justify;
 }
 
-.resultTextContainer p {
-  color: #c9a456;
+.resultTextContainerDark p {
+  color: var(--text-color-dark-orange);
+}
+
+.resultTextContainerLight p {
+  color: var(--text-color-light-orange);
 }
 
 @media only screen and (min-width: 1100px) {

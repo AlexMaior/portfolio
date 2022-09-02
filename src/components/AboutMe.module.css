@@ -31,8 +31,8 @@
 
 .textContainer {
   width: 100%;
+
   margin-top: 50px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,28 +40,42 @@
   height: 360px;
 }
 
-.textContainer h2 {
+.textContainerH2 {
   font-size: 40px;
-  color: #c9a456;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.textContainer p {
+.textContainerH2Dark {
+  color: var(--text-color-dark-orange);
+}
+
+.textContainerH2Light {
+  color: var(--text-color-light-orange);
+}
+
+.textContainerP {
   display: block;
   font-size: 18px;
-  color: #b9ab9d;
   font-family: "MontserratMedium";
+}
+
+.textContainerP span {
+  white-space: nowrap;
+}
+.textContainerPDark {
+  color: var(--text-color-dark-grey);
+}
+
+.textContainerPLight {
+  color: var(--text-color-light-grey);
 }
 
 .btn {
   text-align: center;
   width: 220px;
   padding: 15px;
-  border: 2px solid #aab83e;
-  color: #aab83e;
   border-radius: 10px;
-  background-color: #aab83e00;
   font-size: 20px;
   transition-duration: 0.7s;
   font-family: "MontserratSemiBold";
@@ -69,21 +83,48 @@
   letter-spacing: 1px;
 }
 
-.btn:hover {
-  background-color: #aab83e;
-  color: #34353a;
+.btnDark {
+  border: 2px solid var(--text-color-dark-green);
+  color: var(--text-color-dark-green);
+  background-color: #aab83e00;
 }
 
+.btnLight {
+  border: 2px solid var(--text-color-light-green);
+  color: var(--text-color-light-green);
+  background-color: #aab83e00;
+}
+
+.btnDark:hover {
+  background-color: var(--text-color-dark-green);
+  color: #34353a;
+}
+.btnLight:hover {
+  background-color: var(--text-color-light-green);
+  color: #ffffff;
+}
+
+.getInTouchDark {
+  color: var(--text-color-dark-green);
+}
+
+.getInTouchLight {
+  color: var(--text-color-light-green);
+}
 .getInTouch {
-  color: #aab83e;
+  white-space: nowrap;
 }
 
 .getInTouch:hover {
   cursor: pointer;
 }
 
-.color {
-  color: #aab83e;
+.colorDark {
+  color: var(--text-color-dark-green);
+}
+
+.colorLight {
+  color: var(--text-color-light-green);
 }
 
 @media only screen and (min-width: 700px) {
@@ -127,7 +168,7 @@
     margin-top: 0px;
   }
 
-  .textContainer p {
+  .textContainerP {
     margin: 0;
   }
 

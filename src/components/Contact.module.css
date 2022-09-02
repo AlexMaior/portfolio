@@ -1,14 +1,28 @@
-h2 {
+.contactContainerTitle {
   font-size: 40px;
-  color: #c9a456;
   margin-bottom: 10px;
   /* margin-top: 0px; */
+}
+
+.contactContainerTitleDark {
+  color: var(--text-color-dark-orange);
+}
+
+.contactContainerTitleLight {
+  color: var(--text-color-light-orange);
 }
 
 .contactCTA {
   margin: 0;
   font-size: 18px;
-  color: #b9ab9d;
+}
+
+.contactCTADark {
+  color: var(--text-color-dark-grey);
+}
+
+.contactCTALight {
+  color: var(--text-color-light-grey);
 }
 
 .contactContainer {
@@ -40,7 +54,6 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: #242426; */
   min-width: 230px;
   padding: 20px 25px;
   border-radius: 9px;
@@ -48,11 +61,10 @@ h2 {
 }
 
 .lightContainer {
-  background-color: #e7e7e7;
+  background-color: var(--bg-color-light);
 }
 
 .darkContainer {
-  /* background-color: #242426; */
   background-color: var(--bg-color-dark);
 }
 
@@ -62,10 +74,14 @@ h2 {
   padding-right: 10px;
 }
 
-.mailText,
-.phoneText {
-  /* font-size: 1px; */
-  color: #aab83e;
+.mailTextDark,
+.phoneTextDark {
+  color: var(--text-color-dark-green);
+}
+
+.mailTextLight,
+.phoneTextLight {
+  color: var(--text-color-light-green);
 }
 
 .socialContainer {

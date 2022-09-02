@@ -1,5 +1,4 @@
 .footerContainer {
-  /* background-color: #242426; */
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -7,7 +6,6 @@
 }
 
 .lightFooter {
-  /* background-color: #e7e7e7; */
   background-color: var(--bg-color-light);
 }
 
@@ -34,6 +32,13 @@
 .footerText {
   font-size: 14px;
   margin: auto 0;
-  color: #b9ab9d;
   margin-bottom: 30px;
+}
+
+.footerTextDark {
+  color: var(--text-color-dark-grey);
+}
+
+.footerTextLight {
+  color: var(--text-color-light-grey);
 }

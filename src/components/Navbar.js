@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
 import Logo from "../Images/Logo3.png";
+import LogoLight from "../Images/Logo3Light.png";
 import Github from "../Images/github.svg";
 import Instagram from "../Images/instagram.svg";
 import Linkedin from "../Images/linkedin.svg";
+import GithubLight from "../Images/githubLight.svg";
+import InstagramLight from "../Images/instagramLight.svg";
+import LinkedinLight from "../Images/linkedinLight.svg";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import "./Navbar.css";
@@ -25,14 +29,18 @@ const Navbar = () => {
           <ul className="logoAndBurger">
             <li>
               <Link
-                activeClass="active"
+                activeClass={darkTheme ? "activeDark" : "activeLight"}
                 className="home"
                 to="home"
                 spy={true}
                 smooth={true}
                 duration={500}
               >
-                <img src={Logo} alt="Logo" className="logo" />
+                <img
+                  src={darkTheme ? Logo : LogoLight}
+                  alt="Logo"
+                  className="logo"
+                />
               </Link>
             </li>
             <li className="burger">
@@ -40,9 +48,21 @@ const Navbar = () => {
                 className={`container ${isActive ? "" : "change"}`}
                 onClick={ToggleChange}
               >
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+                <div
+                  className={
+                    darkTheme ? "bar1 barColorDark" : "bar1 barColorLight"
+                  }
+                ></div>
+                <div
+                  className={
+                    darkTheme ? "bar2 barColorDark" : "bar2 barColorLight"
+                  }
+                ></div>
+                <div
+                  className={
+                    darkTheme ? "bar3 barColorDark" : "bar3 barColorLight"
+                  }
+                ></div>
               </div>
             </li>
           </ul>
@@ -57,9 +77,15 @@ const Navbar = () => {
         >
           <article className="navContainers">
             <ul className="navList">
-              <li>
+              <li
+                className={
+                  darkTheme
+                    ? "navlistLi navlistLiDark"
+                    : "navlistLi navlistLiLight"
+                }
+              >
                 <Link
-                  activeClass="active"
+                  activeClass={darkTheme ? "activeDark" : "activeLight"}
                   className="size"
                   to="home"
                   spy={true}
@@ -70,9 +96,15 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li
+                className={
+                  darkTheme
+                    ? "navlistLi navlistLiDark"
+                    : "navlistLi navlistLiLight"
+                }
+              >
                 <Link
-                  activeClass="active"
+                  activeClass={darkTheme ? "activeDark" : "activeLight"}
                   className="size"
                   to="about"
                   spy={true}
@@ -83,9 +115,15 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li>
+              <li
+                className={
+                  darkTheme
+                    ? "navlistLi navlistLiDark"
+                    : "navlistLi navlistLiLight"
+                }
+              >
                 <Link
-                  activeClass="active"
+                  activeClass={darkTheme ? "activeDark" : "activeLight"}
                   className="size"
                   to="projects"
                   spy={true}
@@ -96,9 +134,15 @@ const Navbar = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              <li
+                className={
+                  darkTheme
+                    ? "navlistLi navlistLiDark"
+                    : "navlistLi navlistLiLight"
+                }
+              >
                 <Link
-                  activeClass="active"
+                  activeClass={darkTheme ? "activeDark" : "activeLight"}
                   className="size"
                   to="contact"
                   spy={true}
@@ -113,31 +157,55 @@ const Navbar = () => {
           </article>
           <article className="navContainers">
             <ul className="social">
-              <li>
+              <li
+                className={
+                  darkTheme ? "socialLi socialLiDark" : "socialLi socialLiLight"
+                }
+              >
                 <a
                   href="https://www.linkedin.com/in/alexmaior/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={Linkedin} alt="Linkedin" className="imgSocial" />
+                  <img
+                    src={darkTheme ? Linkedin : LinkedinLight}
+                    alt="Linkedin"
+                    className="imgSocial"
+                  />
                 </a>
               </li>
-              <li>
+              <li
+                className={
+                  darkTheme ? "socialLi socialLiDark" : "socialLi socialLiLight"
+                }
+              >
                 <a
                   href="https://github.com/AlexMaior"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={Github} alt="Github" className="imgSocial" />
+                  <img
+                    src={darkTheme ? Github : GithubLight}
+                    alt="Github"
+                    className="imgSocial"
+                  />
                 </a>
               </li>
-              <li>
+              <li
+                className={
+                  darkTheme ? "socialLi socialLiDark" : "socialLi socialLiLight"
+                }
+              >
                 <a
                   href="https://www.instagram.com/alexmaior/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={Instagram} alt="Instagram" className="imgSocial" />
+                  <img
+                    src={darkTheme ? Instagram : InstagramLight}
+                    alt="Instagram"
+                    className="imgSocial"
+                  />
                 </a>
               </li>
             </ul>

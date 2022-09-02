@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Button from "./Button";
 import classes from "./Form.module.css";
 import Qman from "../../Images/Q_man_2000.png";
+import { ThemeContext } from "../../App";
 
 const Form = () => {
   const [data, setData] = useState([]);
@@ -10,6 +11,8 @@ const Form = () => {
   const [deathToday, setDeathToday] = useState("");
   const [eventToday, setEventToday] = useState("");
   const [selectedToday, setSelectedToday] = useState("");
+
+  const darkTheme = useContext(ThemeContext);
 
   useEffect(() => {
     let today = new Date();
@@ -83,11 +86,34 @@ const Form = () => {
       <form onSubmit={onClickHandler}>
         <br />
         <div className={classes.titleContainer}>
-          <span className={classes.title}>API project</span>
+          <span
+            className={
+              darkTheme
+                ? `${classes.title} ${classes.titleDark}`
+                : `${classes.title} ${classes.titleLight}`
+            }
+          >
+            API project
+          </span>
         </div>
         <div className={classes.questionsContainer}>
-          <p className={classes.formQuestion}> Today</p>
-          <p className={classes.formQuestion2}>
+          <p
+            className={
+              darkTheme
+                ? `${classes.formQuestion} ${classes.formQuestionDark}`
+                : `${classes.formQuestion} ${classes.formQuestionLight}`
+            }
+          >
+            {" "}
+            Today
+          </p>
+          <p
+            className={
+              darkTheme
+                ? `${classes.formQuestion2} ${classes.formQuestion2Dark}`
+                : `${classes.formQuestion2} ${classes.formQuestion2Light}`
+            }
+          >
             in<span> history</span>
           </p>
         </div>
@@ -95,12 +121,22 @@ const Form = () => {
           <Button
             disabled={data.length === 0 ? "disabled" : false}
             type="submit"
-            class={classes.factBtn}
+            class={
+              darkTheme
+                ? `${classes.factBtn} ${classes.factBtnDark}`
+                : `${classes.factBtn} ${classes.factBtnLight}`
+            }
           >
             Discover
           </Button>
         </div>
-        <div className={classes.resultTextContainer}>
+        <div
+          className={
+            darkTheme
+              ? `${classes.resultTextContainer} ${classes.resultTextContainerDark}`
+              : `${classes.resultTextContainer} ${classes.resultTextContainerLight}`
+          }
+        >
           <span>{birthToday}</span>
 
           <span>{deathToday}</span>

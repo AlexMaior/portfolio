@@ -1,25 +1,21 @@
-/* @media only screen and (max-width: 800px) { */
 .nav {
   position: sticky;
   top: 0;
-  /* background-color: #242426;
-  color: #b9ab9d; */
   box-sizing: border-box;
-  border-bottom: 2px solid #aab83e;
   z-index: 2;
   transition: 0.3s;
 }
 
 .navDark {
-  /* background-color: #242426; */
   background-color: var(--bg-color-dark);
-  color: #b9ab9d;
+  color: var(--text-color-dark-grey);
+  border-bottom: 2px solid var(--text-color-dark-green);
 }
 
 .navLight {
-  /* background-color: #e7e7e7; */
   background-color: var(--bg-color-light);
-  color: #3d3834;
+  color: var(--text-color-light-grey);
+  border-bottom: 2px solid var(--text-color-light-green);
 }
 
 .navContent {
@@ -36,7 +32,6 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  /* background-color: #242426ec; */
   top: 58px;
   width: 100%;
 }
@@ -59,15 +54,20 @@
   padding: 10px 0px;
 }
 
-.navList li,
-.social li {
+.navlistLi,
+.socialLi {
   padding: 25px 0px;
+  cursor: pointer;
 }
 
-.navList li:hover,
-.social li:hover {
-  color: #aab83e;
-  cursor: pointer;
+.navlistLiDark:hover,
+.socialLiDark:hover {
+  color: var(--text-color-dark-green);
+}
+
+.navlistLiLight:hover,
+.socialLiLight:hover {
+  color: var(--text-color-light-green);
 }
 
 .imgSocial {
@@ -80,8 +80,12 @@
   color: #aab83e;
 }
 
-.active {
-  color: #aab83e;
+.activeDark {
+  color: var(--text-color-dark-green);
+}
+
+.activeLight {
+  color: var(--text-color-light-green);
 }
 
 .size {
@@ -107,9 +111,16 @@
 .bar3 {
   width: 35px;
   height: 3px;
-  background-color: #aab83e;
   margin: 8px 0;
   transition: 0.4s;
+}
+
+.barColorDark {
+  background-color: var(--text-color-dark-green);
+}
+
+.barColorLight {
+  background-color: var(--text-color-light-green);
 }
 
 .change .bar1 {
@@ -145,6 +156,7 @@
     background-color: #24242600;
     top: 0px;
     width: auto;
+    border-bottom: none;
   }
 
   .navList {
@@ -159,8 +171,8 @@
     padding: 0px;
   }
 
-  .navList li,
-  .social li,
+  .navlistLi,
+  .socialLi,
   .logoAndBurger li {
     padding: 0px;
   }

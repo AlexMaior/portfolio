@@ -14,7 +14,6 @@
   align-items: center;
   width: 250px;
   margin-bottom: 30px;
-  /* background-color: aqua; */
 }
 
 .aboutSection article p {
@@ -38,10 +37,17 @@
 }
 
 .color {
-  color: #c9a456;
   margin-bottom: 5px;
   margin-top: 0px;
   font-family: "MontserratSemiBold";
+}
+
+.colorDark {
+  color: var(--text-color-dark-orange);
+}
+
+.colorLight {
+  color: var(--text-color-light-orange);
 }
 
 .poli {
@@ -49,6 +55,13 @@
 }
 
 .aboutWebsitesDescription {
-  color: #b9ab9d;
   margin-top: 0;
+}
+
+.aboutWebsitesDescriptionDark {
+  color: var(--text-color-dark-grey);
+}
+
+.aboutWebsitesDescriptionLight {
+  color: var(--text-color-light-grey);
 }

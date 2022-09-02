@@ -69,22 +69,38 @@
 }
 
 .appPara {
-  color: #b9ab9d;
   margin: 0;
   padding: 0;
   display: inline;
 }
 
+.appParaDark {
+  color: var(--text-color-dark-grey);
+}
+
+.appParaLight {
+  color: var(--text-color-light-grey);
+}
+
 .appParaSpan {
-  color: #aab83e;
   padding: 0;
   margin: 0;
 }
 
+.appParaSpanDark {
+  color: var(--text-color-dark-green);
+}
+
+.appParaSpanLight {
+  color: var(--text-color-light-green);
+}
+
+.contentSection {
+  width: 75%;
+  margin: auto;
+}
+
 .btn {
-  border: 2px solid #aab83e;
-  background-color: rgba(0, 255, 255, 0);
-  color: #aab83e;
   border-radius: 9px;
   padding: 10px;
   display: flex;
@@ -97,24 +113,49 @@
   font-family: "MontserratSemiBold";
 }
 
-.arrow {
-  transition-duration: 0.7s;
-  color: #aab83e;
+/*Button Dark mode color scheme*/
+
+.btnDark {
+  border: 2px solid var(--text-color-dark-green);
+  background-color: rgba(0, 255, 255, 0);
+  color: var(--text-color-dark-green);
 }
 
-.btn:hover {
-  background-color: #aab83e;
+.btnDark:hover {
+  background-color: var(--text-color-dark-green);
   color: #34353a;
 }
 
-.btn:hover .arrow {
+.arrowDark {
+  color: var(--text-color-dark-green);
+  transition-duration: 0.7s;
+}
+
+.btnDark:hover .arrowDark {
   transform: rotate(90deg);
   color: #34353a;
 }
 
-.contentSection {
-  width: 75%;
-  margin: auto;
+/*Button LIGHT mode color scheme */
+.btnLight {
+  border: 2px solid var(--text-color-light-green);
+  background-color: rgba(0, 255, 255, 0);
+  color: var(--text-color-light-green);
+}
+
+.btnLight:hover {
+  background-color: var(--text-color-light-green);
+  color: #ffffff;
+}
+
+.arrowLight {
+  color: var(--text-color-light-green);
+  transition-duration: 0.7s;
+}
+
+.btnLight:hover .arrowLight {
+  transform: rotate(90deg);
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 400px) {
@@ -122,7 +163,8 @@
     width: 160px;
     font-size: 16px;
   }
-  .arrow {
+  .arrowDark,
+  .arrowLight {
     font-size: 16px;
   }
 
@@ -136,7 +178,8 @@
     width: 260px;
     font-size: 20px;
   }
-  .arrow {
+  .arrowDark,
+  .arrowLight {
     font-size: 20px;
   }
 
@@ -150,7 +193,8 @@
     width: 300px;
     font-size: 22px;
   }
-  .arrow {
+  .arrowDark,
+  .arrowLight {
     font-size: 25px;
   }
 
