@@ -118,7 +118,7 @@
   }
 
   .projectImageLight {
-    filter: saturate(1) brightness(1);
+    filter: saturate(0) brightness(1);
   }
 
   .projectName {
@@ -132,9 +132,9 @@
   }
 
   .projectsImagesContainer div:hover .projectNameDark {
-    color: var(--text-color-dark-grey);
+    color: var(--text-color-dark-orange);
   }
   .projectsImagesContainer div:hover .projectNameLight {
-    color: var(--text-color-light-grey);
+    color: var(--text-color-light-orange);
   }
 }

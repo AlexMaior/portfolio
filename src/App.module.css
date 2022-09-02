@@ -19,6 +19,10 @@
   font-family: MontserratSemiBold;
   src: url("./Font/Montserrat/Montserrat-SemiBold.ttf");
 }
+@font-face {
+  font-family: MontserratLight;
+  src: url("./Font/Montserrat/Montserrat-Light.ttf");
+}
 
 .App {
   text-align: center;

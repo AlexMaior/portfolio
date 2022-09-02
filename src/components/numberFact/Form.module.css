@@ -27,30 +27,31 @@
   padding: 10px 15px;
   font-size: 20px;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .factBtnDark {
   color: var(--text-color-dark-green);
   background-color: #aab83e00;
-  border: 1px solid var(--text-color-dark-green);
+  border: 2px solid var(--text-color-dark-green);
 }
 .factBtnDark:hover {
-  color: black;
+  color: #34353a;
   background-color: var(--text-color-dark-green);
-  border: 1px solid var(--text-color-dark-green);
+  border: 2px solid var(--text-color-dark-green);
   cursor: pointer;
 }
 
 .factBtnLight {
   color: var(--text-color-light-green);
   background-color: #90c90000;
-  border: 1px solid var(--text-color-light-green);
+  border: 2px solid var(--text-color-light-green);
 }
 
 .factBtnLight:hover {
   color: rgb(255, 255, 255);
   background-color: var(--text-color-light-green);
-  border: 1px solid var(--text-color-light-green);
+  border: 2px solid var(--text-color-light-green);
   cursor: pointer;
 }
 
@@ -110,7 +111,7 @@
 .formQuestion2 {
   text-transform: uppercase;
   text-align: left;
-  font-family: "MontserratExtraLight";
+  font-family: "MontserratLight";
 }
 
 .formQuestion2 span {
@@ -130,7 +131,7 @@
 }
 
 .resultTextContainerLight p {
-  color: var(--text-color-light-orange);
+  color: var(--text-color-light-grey);
 }
 
 @media only screen and (min-width: 1100px) {

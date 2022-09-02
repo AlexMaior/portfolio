@@ -74,6 +74,11 @@
   padding-right: 10px;
 }
 
+.mailText,
+.phoneText {
+  font-family: "MontserratSemiBold";
+}
+
 .mailTextDark,
 .phoneTextDark {
   color: var(--text-color-dark-green);
@@ -122,6 +127,7 @@
   .mailText,
   .phoneText {
     font-size: 20px;
+    font-family: "MontserratSemiBold";
   }
 
   .mailImg,
