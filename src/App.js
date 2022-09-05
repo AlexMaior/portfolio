@@ -79,7 +79,7 @@ function App() {
                 : `${classes.appPara} ${classes.appParaLight}`
             }
           >
-            I'm a full-stack web developer.
+            I'm a front end web developer.
           </p>
           <br />
           <Button

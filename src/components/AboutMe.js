@@ -44,8 +44,8 @@ const AboutMe = () => {
               : `${classes.textContainerP} ${classes.textContainerPLight}`
           }
         >
-          Hi! I'm Alex, a full-stack web developer with a passion for Front-end.
-          I like to code and enjoy bringing ideas to life in the browser.
+          Hi! I'm Alex, a web developer with a passion for Front-end. I like to
+          code and enjoy bringing ideas to life in the browser.
         </p>
         <p
           className={
