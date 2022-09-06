@@ -29,7 +29,7 @@ const Projects = () => {
       <article className={classes.projectsImagesContainer}>
         <div>
           <a
-            href="https://romania-turistica-b36ae.web.app/"
+            href="https://transcendent-madeleine-45f9be.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
