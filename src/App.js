@@ -69,7 +69,7 @@ function App() {
               {" "}
               Alex Maior
             </span>
-            .
+            ,
           </p>
           <br />
           <p
@@ -79,7 +79,7 @@ function App() {
                 : `${classes.appPara} ${classes.appParaLight}`
             }
           >
-            I'm a front end web developer.
+            and I'm a software developer.
           </p>
           <br />
           <Button

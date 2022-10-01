@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
         <div>
           <a
-            href="https://sushi-website.netlify.app/"
+            href="https://joyful-shortbread-d07fbb.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
