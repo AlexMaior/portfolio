@@ -80,6 +80,16 @@
   transition: 0.3s;
 }
 
+.divPlaceholder2 {
+  max-width: 900px;
+  min-width: 270px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  /* transition: 0.3s; */
+}
+
 .lightAPIProj {
   background-color: var(--bg-color-light-2);
 }

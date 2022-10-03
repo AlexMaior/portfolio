@@ -6,6 +6,7 @@ import Recipe from "../Images/foodApp.jpg";
 import Form from "./numberFact/Form";
 import { ThemeContext } from "../App";
 import "../constants.css";
+import TempConverter from "./TempConverter";
 
 const Projects = () => {
   const darkTheme = React.useContext(ThemeContext);
@@ -114,6 +115,15 @@ const Projects = () => {
         }
       >
         <Form />
+      </article>
+      <article
+        className={
+          darkTheme
+            ? `${classes.divPlaceholder2} ${classes.darkAPIProj} `
+            : `${classes.divPlaceholder2} ${classes.lightAPIProj}`
+        }
+      >
+        <TempConverter />
       </article>
       <br></br>
     </section>
