@@ -116,7 +116,7 @@ const Projects = () => {
       >
         <Form />
       </article>
-      <article
+      {/* <article
         className={
           darkTheme
             ? `${classes.divPlaceholder2} ${classes.darkAPIProj} `
@@ -124,7 +124,7 @@ const Projects = () => {
         }
       >
         <TempConverter />
-      </article>
+      </article> */}
       <br></br>
     </section>
   );
