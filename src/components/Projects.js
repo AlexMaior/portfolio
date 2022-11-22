@@ -6,7 +6,7 @@ import Recipe from "../Images/foodApp.jpg";
 import Form from "./numberFact/Form";
 import { ThemeContext } from "../App";
 import "../constants.css";
-import TempConverter from "./TempConverter";
+//import TempConverter from "./TempConverter";
 
 const Projects = () => {
   const darkTheme = React.useContext(ThemeContext);
