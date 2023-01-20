@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 360px;
+  height: auto;
 }
 
 .textContainerH2 {
@@ -157,7 +157,6 @@
 
   .aboutMeImageContainer {
     display: flex;
-    height: 360px;
   }
 
   .textContainer {
@@ -168,12 +167,9 @@
     margin-top: 0px;
   }
 
-  .textContainerP {
-    margin: 0;
-  }
-
   .imageContainer {
     width: 40%;
+    margin-top: 0;
   }
 
   .btn {

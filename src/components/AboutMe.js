@@ -44,8 +44,12 @@ const AboutMe = () => {
               : `${classes.textContainerP} ${classes.textContainerPLight}`
           }
         >
-          Hi! I'm Alex, a software developer with a passion for Front End. I
-          like to code and enjoy bringing ideas to life.
+          Hi! I'm Alex, a recent computer science graduate with a focus on C#
+          and .NET development. I have experience in both front-end and back-end
+          development through various projects and am always eager to learn and
+          improve my skills. Languages I speak: HTML, CSS, Javascript, React, C#
+          I am excited to start my career in the field and am open to new
+          opportunities so please don't hesitate to contact me.
         </p>
         <p
           className={
