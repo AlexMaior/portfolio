@@ -71,6 +71,11 @@
   color: var(--text-color-light-grey);
 }
 
+.languages {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn {
   text-align: center;
   width: 220px;
@@ -131,7 +136,10 @@
   /* .overlap {
     width: 250px;
   } */
-
+  .languages {
+    display: flex;
+    flex-direction: column;
+  }
   .textContainer {
     width: 80%;
   }
@@ -141,7 +149,10 @@
   .aboutMeContainer {
     flex-direction: row;
   }
-
+  .languages {
+    display: flex;
+    flex-direction: row;
+  }
   .border {
     display: flex;
     margin-top: 28px;

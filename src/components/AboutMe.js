@@ -58,38 +58,60 @@ const AboutMe = () => {
               : `${classes.textContainerP} ${classes.textContainerPLight}`
           }
         >
-          Languages I speak:{" "}
-          <span
-            className={
-              darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
-            }
-          >
-            HTML
-          </span>
-          ,&nbsp;
-          <span
-            className={
-              darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
-            }
-          >
-            CSS
-          </span>
-          ,&nbsp;
-          <span
-            className={
-              darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
-            }
-          >
-            Javascript
-          </span>
-          ,&nbsp;
-          <span
-            className={
-              darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
-            }
-          >
-            React
-          </span>
+          <div className={classes.languages}>
+            <div>Languages I speak: </div>
+            <div>
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                HTML
+              </span>
+              ,&nbsp;
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                CSS
+              </span>
+              ,&nbsp;
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                Javascript
+              </span>
+              ,&nbsp;
+            </div>
+            <div>
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                React
+              </span>
+              ,&nbsp;
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                C#
+              </span>
+              ,&nbsp;
+              <span
+                className={
+                  darkTheme ? `${classes.colorDark}` : `${classes.colorLight}`
+                }
+              >
+                .NET
+              </span>
+            </div>
+          </div>
         </p>
         <p
           className={
