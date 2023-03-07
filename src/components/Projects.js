@@ -30,7 +30,7 @@ const Projects = () => {
       <article className={classes.projectsImagesContainer}>
         <div>
           <a
-            href="https://transcendent-madeleine-45f9be.netlify.app/"
+            href="https://gregarious-marigold-2595b5.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
