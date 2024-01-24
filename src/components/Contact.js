@@ -65,28 +65,6 @@ const Contact = () => {
               alexmaior@yahoo.com
             </p>
           </div>
-          <div
-            className={
-              darkTheme
-                ? `${classes.phoneContainer} ${classes.darkContainer}`
-                : `${classes.phoneContainer} ${classes.lightContainer}`
-            }
-          >
-            <img
-              src={darkTheme ? Phone : PhoneLight}
-              alt="phone"
-              className={classes.phoneImg}
-            />
-            <p
-              className={
-                darkTheme
-                  ? `${classes.phoneText} ${classes.phoneTextDark}`
-                  : `${classes.phoneText} ${classes.phoneTextLight}`
-              }
-            >
-              +40 755 903 907
-            </p>
-          </div>
         </article>
         <article className={classes.socialContainer}>
           <a
