@@ -3,6 +3,7 @@ import classes from "./App.module.css";
 import Button from "./components/Button";
 import { FaArrowRight } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import { ParticlesComponent } from "./components/ParticlesComponent";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
@@ -97,6 +98,7 @@ function App() {
             />
           </Button>
         </section>
+        <ParticlesComponent />
 
         <Navbar toggleTheme={toggleTheme} />
         <section className={classes.contentSection}>
