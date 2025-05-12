@@ -16,15 +16,23 @@ const Form = () => {
 
   useEffect(() => {
     let today = new Date();
-    let month = today.getMonth() + 1;
-    let day = today.getDate();
-    const url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${month}/${day}`;
+    let month = String(today.getMonth() + 1).padStart(2,'0');
+    let day = String(today.getDate()).padStart(2,'0');
+    let url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${month}/${day}`;
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setData(data);
-      });
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+          setData(data);
+        })
+        .catch((error) => {
+          console.error("Fetch error:", error);
+        });
   }, []);
   let birth, death, event1, selected1;
   const onClickHandler = (event) => {
