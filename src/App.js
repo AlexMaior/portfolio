@@ -79,7 +79,7 @@ function App() {
                 : `${classes.appPara} ${classes.appParaLight}`
             }
           >
-            and I'm a software developer.
+            and I'm a software engineer.
           </p>
           <br />
           <Button
