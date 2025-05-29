@@ -4,7 +4,7 @@ import Portrait from "../Images/PortretYellow1.png";
 import PortraitLight from "../Images/PortretYellowLIGHT.jpg";
 // import Portrait2 from "../Images/PortretYellow2x.png";
 import classes from "./AboutMe.module.css";
-import CV from "../Images/Maior_Ionut_Alexandru_CV.pdf";
+import CV from "../Images/Maior_Ionut_Alexandru_Resume.pdf";
 import { Link } from "react-scroll";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
