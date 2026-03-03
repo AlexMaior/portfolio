@@ -7,13 +7,20 @@ import Linkedin from "../Images/linkedin.svg";
 import GithubLight from "../Images/githubLight.svg";
 import InstagramLight from "../Images/instagramLight.svg";
 import LinkedinLight from "../Images/linkedinLight.svg";
-import { Fragment, useContext } from "react";
+import { Fragment, useContext, useMemo } from "react";
 import Triangle from "../Images/triangle.svg";
 import TriangleLight from "../Images/triangleLight.svg";
 import { ThemeContext } from "../App";
 
 const Contact = () => {
   const darkTheme = useContext(ThemeContext);
+  const email = useMemo(
+    () =>
+      [97,108,101,120,97,110,100,114,117,105,109,97,105,111,114,64,103,109,97,105,108,46,99,111,109]
+        .map((c) => String.fromCharCode(c))
+        .join(""),
+    []
+  );
   return (
     <Fragment>
       <img
@@ -60,7 +67,7 @@ const Contact = () => {
                   : `${classes.mailText} ${classes.mailTextLight}`
               }
             >
-              alexmaior@yahoo.com
+              {email}
             </p>
           </div>
         </article>
